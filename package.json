@@ -1,0 +1,18 @@
+{
+  "name": "projet-4",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Moody78190/Projet-4.git)"
+  },
+  "author": "Redwan Karoni",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
