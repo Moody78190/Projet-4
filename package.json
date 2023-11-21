@@ -1,13 +1,14 @@
 {
   "dependencies": {
+    "minireset.css": "^0.0.7",
+    "normalize.css": "^8.0.1",
     "sass": "^1.69.5"
   },
   "name": "projet-4",
   "version": "1.0.0",
   "main": "index.scss",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch style.scss style.css"
   },
   "repository": {
     "type": "git",
