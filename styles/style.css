@@ -1,15 +1,13 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 /* reset*/
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
   color: unset;
   font-style: unset;
-  font-family:unset;
+  font-family: unset;
   font-weight: unset;
-  
 }
 
 /* Preferred box-sizing value */
@@ -22,12 +20,15 @@
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a, button {
+a,
+button {
   cursor: revert;
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol,
+ul,
+menu {
   list-style: none;
 }
 
@@ -37,7 +38,8 @@ table {
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
+input,
+textarea {
   -webkit-user-select: auto;
 }
 
@@ -49,20 +51,13 @@ textarea {
 /* minimum style to allow to style meter element */
 meter {
   -webkit-appearance: revert;
-   appearance: revert;
+  appearance: revert;
 }
 
-
-
-/*# sourceMappingURL=style.css.map */
-
-
-/*Header*/
-
-h1{
-  font-family: "shrikhand",cursive;
+body header h1 {
+  font-family: "shrikhand", cursive;
   text-align: center;
-  width:375px;
+  width: 375px;
   height: 63px;
   margin-top: 14px;
   margin-bottom: 0;
@@ -70,11 +65,10 @@ h1{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  
   /* Shadow/Badge */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  }
-form{
+}
+body header form {
   width: 375px;
   height: 50px;
   margin-top: 0;
@@ -84,7 +78,7 @@ form{
   align-items: center;
   background: var(--Grey-2, #EAEAEA);
 }
-#dot {
+body header form #dot {
   width: 12px;
   height: 16px;
   color: var(--Grey, #353535);
@@ -92,15 +86,14 @@ form{
   align-items: center;
   justify-content: center;
   padding-right: 17px;
- 
 }
-#belleville{
+body header form #belleville {
   width: 109px;
   height: 19px;
   border: none;
   background-color: #EAEAEA;
 }
-input::placeholder{
+body header form #belleville::placeholder {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -108,23 +101,15 @@ input::placeholder{
   line-height: normal;
   color: black;
 }
-/* section explorer*/
-.explorer{
+body main .explorer {
   width: 375px;
   height: 327px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--Background, #F6F6F6);
-  
 }
-.section-title{
-  width: 275px;
-  height: 68px;
- 
-}
-.explorer-title h2{
-  
+body main .explorer h2 {
   color: #000;
   margin: 0;
   font-family: Roboto;
@@ -135,7 +120,7 @@ input::placeholder{
   text-align: center;
   margin-top: 30px;
 }
-.decouvrez{
+body main .explorer .decouvrez {
   width: 315px;
   height: 46px;
   margin-top: 30px;
@@ -146,9 +131,7 @@ input::placeholder{
   line-height: normal;
   text-align: center;
 }
-/*Button gradient*/
-
-.gradient{
+body main .explorer .gradient {
   width: 218px;
   height: 50px;
   margin-top: 40px;
@@ -161,21 +144,17 @@ input::placeholder{
   line-height: normal;
   border-radius: 25px;
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-
-/* Shadow/Button */
+  /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-/*section fonctionnement*/
-
-.fonctionnement{
+body main .fonctionnement {
   width: 375px;
   height: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
- .fonctionnement-title h2 {
+body main .fonctionnement .fonctionnement-title h2 {
   width: 275px;
   height: 31px;
   font-family: Roboto;
@@ -185,10 +164,60 @@ input::placeholder{
   line-height: normal;
   margin-top: 48px;
   margin-bottom: 30px;
-  
-
 }
- .list li {
+body main .fonctionnement .list {
+  /*icons-list*/
+}
+body main .fonctionnement .list .ellipse {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White, #FFF);
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  right: 10px;
+}
+body main .fonctionnement .list #mobile {
+  width: 13.019px;
+  height: 19.903px;
+  color: var(--grey-tint-4, #7E7E7E);
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: 60px;
+  padding-top: 27px;
+}
+body main .fonctionnement .list #fa-list {
+  width: 13.019px;
+  height: 19.903px;
+  color: var(--grey-tint-4, #7E7E7E);
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: 60px;
+  padding-top: 27px;
+}
+body main .fonctionnement .list #store {
+  width: 13.019px;
+  height: 19.903px;
+  color: var(--grey-tint-4, #7E7E7E);
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: 60px;
+  padding-top: 27px;
+}
+body main .fonctionnement .list li {
   width: 322.486px;
   height: 72.379px;
   border-radius: 20px;
@@ -205,71 +234,14 @@ input::placeholder{
   font-weight: 500;
   line-height: normal;
   position: relative;
-  
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-/*icons-list*/
-.ellipse{
-  width: 24px;
-  height: 24px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--White, #FFF);
-  font-family: Roboto;
-  font-size: 14.182px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  position:relative;
-  z-index: 1;
-  top: 50px;
-  right: 10px;
-  
- 
-  
-}
-#mobile{
-  width: 13.019px;
-  height: 19.903px;
-  color:var(--grey-tint-4, #7E7E7E);;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: 60px;
-  padding-top:27px;
-  }
-  #fa-list{
-  width: 13.019px;
-  height: 19.903px;
-  color:var(--grey-tint-4, #7E7E7E);;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: 60px;
-  padding-top:27px;
-}
-#store{
-  width: 13.019px;
-  height: 19.903px;
-  color:var(--grey-tint-4, #7E7E7E);;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: 60px;
-  padding-top:27px;
-
-}
-/*Section restaurant*/
-
-section.restaurants{
+body main section.restaurants {
   height: 1220px;
   background: var(--Background, #F6F6F6);
 }
-.restaurant h2 {
+body main section.restaurants h2 {
   width: 275px;
   height: 68px;
   font-family: Roboto;
@@ -281,9 +253,7 @@ section.restaurants{
   padding-left: 20px;
   margin-bottom: 30px;
 }
-/*cards*/
-
-article.card{
+body main section.restaurants article.card {
   height: 251px;
   width: 340px;
   display: flex;
@@ -293,10 +263,8 @@ article.card{
   margin-right: 18px;
   margin-bottom: 18px;
   position: relative;
- 
-  
 }
-.info{
+body main section.restaurants article.card .info {
   width: 80px;
   height: auto;
   display: flex;
@@ -305,9 +273,8 @@ article.card{
   position: relative;
   left: 245px;
   top: 35px;
-  
 }
-.info p{
+body main section.restaurants article.card .info p {
   width: 80px;
   height: 29px;
   display: flex;
@@ -324,16 +291,13 @@ article.card{
   top: 5px;
   border-radius: 2px;
 }
-img {
-  height:67%;
+body main section.restaurants article.card img {
+  height: 67%;
   width: 100%;
-  border-radius: 15px 15px 0px 0px ;
+  border-radius: 15px 15px 0px 0px;
   object-fit: cover;
-  
-  
 }
-
-.card-text h3{
+body main section.restaurants article.card .card-text h3 {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -344,7 +308,7 @@ img {
   padding-left: 13px;
   padding-bottom: 5px;
 }
-.card-text p{
+body main section.restaurants article.card .card-text p {
   color: #000;
   font-family: Roboto;
   font-size: 17px;
@@ -353,7 +317,7 @@ img {
   line-height: normal;
   padding-left: 13px;
 }
-  #heart{
+body main section.restaurants article.card .card-text #heart {
   display: flex;
   width: 22px;
   height: 21px;
@@ -361,18 +325,15 @@ img {
   position: absolute;
   left: 290px;
   bottom: 20px;
-  
 }
-/*Footer*/
-.footer{
+body .footer {
   background-color: #353535;
   height: 186px;
   width: 100%;
   padding: 22px 25px 22px 25px;
-  
+  /*icons footer*/
 }
-
-.footer h4{
+body .footer h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -385,7 +346,7 @@ img {
   line-height: normal;
   margin-bottom: 16px;
 }
-.footer a {
+body .footer a {
   width: 168px;
   color: var(--White, #FFF);
   font-family: Roboto;
@@ -395,14 +356,12 @@ img {
   line-height: normal;
   text-align: left;
   margin-left: 20px;
-  
 }
- #legal, #contact{
+body .footer #legal,
+body .footer #contact {
   font-weight: 400;
-  
 }
-/*icons footer*/
-.fa-solid{
+body .footer .fa-solid {
   color: #FFFFFF;
   display: flex;
   position: absolute;
@@ -410,6 +369,6 @@ img {
   left: 20px;
   padding-top: 5px;
   gap: 10px;
-  
-  
 }
+
+/*# sourceMappingURL=style.css.map */
