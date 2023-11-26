@@ -5,7 +5,7 @@ body {
         h1 {
             font-family: "shrikhand", cursive;
             text-align: center;
-            width: 375px;
+            width: auto;
             height: 63px;
             margin-top: 14px;
             margin-bottom: 0;
@@ -19,7 +19,7 @@ body {
         }
 
         form {
-            width: 375px;
+            width: auto;
             height: 50px;
             margin-top: 0;
             margin-bottom: 0;
@@ -62,7 +62,7 @@ body {
 
 
         .explorer {
-            width: 375px;
+            width: auto;
             height: 327px;
             display: flex;
             flex-direction: column;
@@ -93,7 +93,7 @@ body {
                 text-align: center;
             }
 
-            .gradient {
+            .button-gradient {
                 width: 218px;
                 height: 50px;
                 margin-top: 40px;
@@ -106,24 +106,37 @@ body {
                 line-height: normal;
                 border-radius: 25px;
                 background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-
+                transition: transform 0.3s ease-in-out;
+                
                 /* Shadow/Button */
                 box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
             }
+            /*hover*/
+            
+             .button-gradient:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+                
 
+            }
+            
         }
 
 
         .fonctionnement {
-            width: 375px;
+            width: auto;
             height: 440px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            
 
             .fonctionnement-title {
-
+                
+        
                 h2 {
+                    
                     width: 275px;
                     height: 31px;
                     font-family: Roboto;
@@ -132,10 +145,13 @@ body {
                     font-weight: 700;
                     line-height: normal;
                     margin-top: 48px;
-                    margin-bottom: 30px;
+                    margin-bottom: 10px;
+                    padding-right: 10px;
                 }
             }
-
+            .list{
+                position: relative;
+            }
             .list {
 
                 /*icons-list*/
@@ -159,49 +175,24 @@ body {
                     right: 10px;
                 }
 
-                #mobile {
-                    width: 13.019px;
-                    height: 19.903px;
+                 .fa-solid {
+                    font-size: 18px;
                     color: var(--grey-tint-4, #7E7E7E);
-                    ;
                     display: flex;
                     position: absolute;
-                    z-index: 1;
-                    left: 60px;
+                    z-index: 2;
+                    left: 40px;
                     padding-top: 27px;
+                    
                 }
 
-                #fa-list {
-                    width: 13.019px;
-                    height: 19.903px;
-                    color: var(--grey-tint-4, #7E7E7E);
-                    ;
-                    display: flex;
-                    position: absolute;
-                    z-index: 1;
-                    left: 60px;
-                    padding-top: 27px;
-                }
-
-                #store {
-                    width: 13.019px;
-                    height: 19.903px;
-                    color: var(--grey-tint-4, #7E7E7E);
-                    ;
-                    display: flex;
-                    position: absolute;
-                    z-index: 1;
-                    left: 60px;
-                    padding-top: 27px;
-
-                }
+                
 
                 li {
                     width: 322.486px;
                     height: 72.379px;
                     border-radius: 20px;
                     background: var(--Background, #F6F6F6);
-                    margin-bottom: 25px;
                     list-style: none;
                     display: flex;
                     align-items: center;
@@ -213,9 +204,14 @@ body {
                     font-weight: 500;
                     line-height: normal;
                     position: relative;
+                    transition: transform 0.3s ease-in-out;
 
                     /* Shadow/Instructions */
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                }
+                 li:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -286,8 +282,12 @@ body {
 
 
                 }
+                
+                .card-content{
+                    position: relative;
+                }
 
-                .card-text {
+                .card-content {
 
                     h3 {
                         color: #000;
@@ -311,22 +311,28 @@ body {
                         padding-left: 13px;
                     }
 
-                    #heart {
+                    .fa-heart
+                     {
+                        font-size: 24px;
                         display: flex;
-                        width: 22px;
-                        height: 21px;
                         color: #101010;
                         position: absolute;
-                        left: 290px;
-                        bottom: 20px;
+                        top: 35%;
+                        left: 85%;
+                        transition: background-color 0.3s
+                        
 
+                    }
+                    
+                     
+                     
                     }
 
                 }
             }
 
         }
-    }
+
 
     .footer {
         background-color: #353535;
@@ -382,4 +388,3 @@ body {
     }
 
 
-}

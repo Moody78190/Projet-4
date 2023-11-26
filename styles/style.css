@@ -11,9 +11,7 @@
 }
 
 /* Preferred box-sizing value */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -37,12 +35,6 @@ table {
   border-collapse: collapse;
 }
 
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input,
-textarea {
-  -webkit-user-select: auto;
-}
-
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
@@ -57,7 +49,7 @@ meter {
 body header h1 {
   font-family: "shrikhand", cursive;
   text-align: center;
-  width: 375px;
+  width: auto;
   height: 63px;
   margin-top: 14px;
   margin-bottom: 0;
@@ -69,7 +61,7 @@ body header h1 {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 body header form {
-  width: 375px;
+  width: auto;
   height: 50px;
   margin-top: 0;
   margin-bottom: 0;
@@ -102,12 +94,13 @@ body header form #belleville::placeholder {
   color: black;
 }
 body main .explorer {
-  width: 375px;
+  width: auto;
   height: 327px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--Background, #F6F6F6);
+  /*hover*/
 }
 body main .explorer h2 {
   color: #000;
@@ -131,7 +124,7 @@ body main .explorer .decouvrez {
   line-height: normal;
   text-align: center;
 }
-body main .explorer .gradient {
+body main .explorer .button-gradient {
   width: 218px;
   height: 50px;
   margin-top: 40px;
@@ -144,17 +137,22 @@ body main .explorer .gradient {
   line-height: normal;
   border-radius: 25px;
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  transition: transform 0.3s ease-in-out;
   /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-body main .fonctionnement {
-  width: 375px;
+body main .explorer .button-gradient:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body .fonctionnement {
+  width: auto;
   height: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body main .fonctionnement .fonctionnement-title h2 {
+body .fonctionnement .fonctionnement-title h2 {
   width: 275px;
   height: 31px;
   font-family: Roboto;
@@ -163,12 +161,16 @@ body main .fonctionnement .fonctionnement-title h2 {
   font-weight: 700;
   line-height: normal;
   margin-top: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding-right: 10px;
 }
-body main .fonctionnement .list {
+body .fonctionnement .list {
+  position: relative;
+}
+
   /*icons-list*/
-}
-body main .fonctionnement .list .ellipse {
+
+body .fonctionnement .list .ellipse {
   width: 24px;
   height: 24px;
   background-color: #9356DC;
@@ -187,42 +189,20 @@ body main .fonctionnement .list .ellipse {
   top: 50px;
   right: 10px;
 }
-body main .fonctionnement .list #mobile {
-  width: 13.019px;
-  height: 19.903px;
+body .fonctionnement .list .fa-solid {
+  font-size: 18px;
   color: var(--grey-tint-4, #7E7E7E);
   display: flex;
   position: absolute;
-  z-index: 1;
-  left: 60px;
+  z-index: 2;
+  left: 40px;
   padding-top: 27px;
 }
-body main .fonctionnement .list #fa-list {
-  width: 13.019px;
-  height: 19.903px;
-  color: var(--grey-tint-4, #7E7E7E);
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: 60px;
-  padding-top: 27px;
-}
-body main .fonctionnement .list #store {
-  width: 13.019px;
-  height: 19.903px;
-  color: var(--grey-tint-4, #7E7E7E);
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: 60px;
-  padding-top: 27px;
-}
-body main .fonctionnement .list li {
+body .fonctionnement .list li {
   width: 322.486px;
   height: 72.379px;
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
-  margin-bottom: 25px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -234,14 +214,19 @@ body main .fonctionnement .list li {
   font-weight: 500;
   line-height: normal;
   position: relative;
+  transition: transform 0.3s ease-in-out;
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-body main section.restaurants {
+body .fonctionnement .list li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body section.restaurants {
   height: 1220px;
   background: var(--Background, #F6F6F6);
 }
-body main section.restaurants h2 {
+body section.restaurants h2 {
   width: 275px;
   height: 68px;
   font-family: Roboto;
@@ -253,7 +238,7 @@ body main section.restaurants h2 {
   padding-left: 20px;
   margin-bottom: 30px;
 }
-body main section.restaurants article.card {
+body section.restaurants article.card {
   height: 251px;
   width: 340px;
   display: flex;
@@ -264,7 +249,7 @@ body main section.restaurants article.card {
   margin-bottom: 18px;
   position: relative;
 }
-body main section.restaurants article.card .info {
+body section.restaurants article.card .info {
   width: 80px;
   height: auto;
   display: flex;
@@ -274,7 +259,7 @@ body main section.restaurants article.card .info {
   left: 245px;
   top: 35px;
 }
-body main section.restaurants article.card .info p {
+body section.restaurants article.card .info p {
   width: 80px;
   height: 29px;
   display: flex;
@@ -291,13 +276,16 @@ body main section.restaurants article.card .info p {
   top: 5px;
   border-radius: 2px;
 }
-body main section.restaurants article.card img {
+body section.restaurants article.card img {
   height: 67%;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-body main section.restaurants article.card .card-text h3 {
+body section.restaurants article.card .card-content {
+  position: relative;
+}
+body section.restaurants article.card .card-content h3 {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -308,7 +296,7 @@ body main section.restaurants article.card .card-text h3 {
   padding-left: 13px;
   padding-bottom: 5px;
 }
-body main section.restaurants article.card .card-text p {
+body section.restaurants article.card .card-content p {
   color: #000;
   font-family: Roboto;
   font-size: 17px;
@@ -317,23 +305,24 @@ body main section.restaurants article.card .card-text p {
   line-height: normal;
   padding-left: 13px;
 }
-body main section.restaurants article.card .card-text #heart {
+body section.restaurants article.card .card-content .fa-heart {
+  font-size: 24px;
   display: flex;
-  width: 22px;
-  height: 21px;
   color: #101010;
   position: absolute;
-  left: 290px;
-  bottom: 20px;
+  top: 35%;
+  left: 85%;
+  transition: background-color 0.3s;
 }
-body .footer {
+
+.footer {
   background-color: #353535;
   height: 186px;
   width: 100%;
   padding: 22px 25px 22px 25px;
   /*icons footer*/
 }
-body .footer h4 {
+.footer h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -346,7 +335,7 @@ body .footer h4 {
   line-height: normal;
   margin-bottom: 16px;
 }
-body .footer a {
+.footer a {
   width: 168px;
   color: var(--White, #FFF);
   font-family: Roboto;
@@ -357,11 +346,11 @@ body .footer a {
   text-align: left;
   margin-left: 20px;
 }
-body .footer #legal,
-body .footer #contact {
+.footer #legal,
+.footer #contact {
   font-weight: 400;
 }
-body .footer .fa-solid {
+.footer .fa-solid {
   color: #FFFFFF;
   display: flex;
   position: absolute;
