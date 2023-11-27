@@ -108,14 +108,21 @@ body {
                 background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
                 transition: transform 0.3s ease-in-out;
                 
+                
+                
                 /* Shadow/Button */
                 box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
             }
             /*hover*/
             
              .button-gradient:hover{
+                background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
                 cursor: pointer;
                 transform: scale(1.1);
+               
+                
+                
             }
                 
 
@@ -149,10 +156,10 @@ body {
                     padding-right: 10px;
                 }
             }
-            .list{
+            .menu-list{
                 position: relative;
             }
-            .list {
+            .menu-list {
 
                 /*icons-list*/
                 .ellipse {
@@ -185,7 +192,10 @@ body {
                     padding-top: 27px;
                     
                 }
-
+                
+                .fa-store{
+                    color: var(--Primary, #9356DC);;
+                }
                 
 
                 li {
@@ -311,7 +321,7 @@ body {
                         padding-left: 13px;
                     }
 
-                    .fa-heart
+                    i 
                      {
                         font-size: 24px;
                         display: flex;
@@ -320,8 +330,19 @@ body {
                         top: 35%;
                         left: 85%;
                         transition: background-color 0.3s
-                        
+                    }
 
+                    .fa-solid{
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        transition: all 0.4s ease-in-out;
+                        background-image: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));;
+                       
+                       
                     }
                     
                      
@@ -353,6 +374,7 @@ body {
             font-weight: 400;
             line-height: normal;
             margin-bottom: 16px;
+            padding-left: 15px;
         }
 
         a {
@@ -365,11 +387,22 @@ body {
             line-height: normal;
             text-align: left;
             margin-left: 20px;
+            
         }
+        p{
+            padding-bottom: 7px;
 
-        #legal,
-        #contact {
+        }
+        .Proposer,
+        .Devenir {
+            padding-left: 22px;
+           
+        }
+        
+        .Mentions,
+        .Contact {
             font-weight: 400;
+           
 
         }
 
@@ -382,9 +415,11 @@ body {
             left: 20px;
             padding-top: 5px;
             gap: 10px;
+            padding-left: 22px;
 
 
         }
     }
 
 
+}

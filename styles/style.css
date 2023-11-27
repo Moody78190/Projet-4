@@ -142,6 +142,8 @@ body main .explorer .button-gradient {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 body main .explorer .button-gradient:hover {
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -164,13 +166,13 @@ body .fonctionnement .fonctionnement-title h2 {
   margin-bottom: 10px;
   padding-right: 10px;
 }
-body .fonctionnement .list {
+body .fonctionnement .menu-list {
   position: relative;
 }
-
+body .fonctionnement .menu-list {
   /*icons-list*/
-
-body .fonctionnement .list .ellipse {
+}
+body .fonctionnement .menu-list .ellipse {
   width: 24px;
   height: 24px;
   background-color: #9356DC;
@@ -189,7 +191,7 @@ body .fonctionnement .list .ellipse {
   top: 50px;
   right: 10px;
 }
-body .fonctionnement .list .fa-solid {
+body .fonctionnement .menu-list .fa-solid {
   font-size: 18px;
   color: var(--grey-tint-4, #7E7E7E);
   display: flex;
@@ -198,7 +200,10 @@ body .fonctionnement .list .fa-solid {
   left: 40px;
   padding-top: 27px;
 }
-body .fonctionnement .list li {
+body .fonctionnement .menu-list .fa-store {
+  color: var(--Primary, #9356DC);
+}
+body .fonctionnement .menu-list li {
   width: 322.486px;
   height: 72.379px;
   border-radius: 20px;
@@ -218,7 +223,7 @@ body .fonctionnement .list li {
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-body .fonctionnement .list li:hover {
+body .fonctionnement .menu-list li:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -305,7 +310,7 @@ body section.restaurants article.card .card-content p {
   line-height: normal;
   padding-left: 13px;
 }
-body section.restaurants article.card .card-content .fa-heart {
+body section.restaurants article.card .card-content i {
   font-size: 24px;
   display: flex;
   color: #101010;
@@ -314,15 +319,25 @@ body section.restaurants article.card .card-content .fa-heart {
   left: 85%;
   transition: background-color 0.3s;
 }
-
-.footer {
+body section.restaurants article.card .card-content .fa-solid {
+  opacity: 0;
+}
+body section.restaurants article.card .card-content .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+}
+body .footer {
   background-color: #353535;
   height: 186px;
   width: 100%;
   padding: 22px 25px 22px 25px;
   /*icons footer*/
 }
-.footer h4 {
+body .footer h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -334,8 +349,9 @@ body section.restaurants article.card .card-content .fa-heart {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 16px;
+  padding-left: 15px;
 }
-.footer a {
+body .footer a {
   width: 168px;
   color: var(--White, #FFF);
   font-family: Roboto;
@@ -346,11 +362,18 @@ body section.restaurants article.card .card-content .fa-heart {
   text-align: left;
   margin-left: 20px;
 }
-.footer #legal,
-.footer #contact {
+body .footer p {
+  padding-bottom: 7px;
+}
+body .footer .Proposer,
+body .footer .Devenir {
+  padding-left: 22px;
+}
+body .footer .Mentions,
+body .footer .Contact {
   font-weight: 400;
 }
-.footer .fa-solid {
+body .footer .fa-solid {
   color: #FFFFFF;
   display: flex;
   position: absolute;
@@ -358,6 +381,7 @@ body section.restaurants article.card .card-content .fa-heart {
   left: 20px;
   padding-top: 5px;
   gap: 10px;
+  padding-left: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
