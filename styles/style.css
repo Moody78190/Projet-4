@@ -114,7 +114,7 @@ body main .explorer h2 {
   margin-top: 30px;
 }
 body main .explorer .decouvrez {
-  width: 315px;
+  width: auto;
   height: 46px;
   margin-top: 30px;
   font-family: Roboto;
@@ -149,13 +149,15 @@ body main .explorer .button-gradient:hover {
 }
 body .fonctionnement {
   width: auto;
-  height: 440px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
-body .fonctionnement .fonctionnement-title h2 {
-  width: 275px;
+body .fonctionnement .fonctionnement-title {
+  display: flex;
+  width: auto;
   height: 31px;
   font-family: Roboto;
   font-size: 24px;
@@ -164,15 +166,15 @@ body .fonctionnement .fonctionnement-title h2 {
   line-height: normal;
   margin-top: 48px;
   margin-bottom: 10px;
-  padding-right: 10px;
+  padding-right: 155px;
 }
-body .fonctionnement .menu-list {
+body .menu-list {
   position: relative;
 }
-body .fonctionnement .menu-list {
+body .menu-list {
   /*icons-list*/
 }
-body .fonctionnement .menu-list .ellipse {
+body .menu-list .ellipse {
   width: 24px;
   height: 24px;
   background-color: #9356DC;
@@ -191,25 +193,27 @@ body .fonctionnement .menu-list .ellipse {
   top: 50px;
   right: 10px;
 }
-body .fonctionnement .menu-list .fa-solid {
+body .menu-list .fa-solid {
   font-size: 18px;
   color: var(--grey-tint-4, #7E7E7E);
   display: flex;
   position: absolute;
-  z-index: 2;
-  left: 40px;
+  z-index: 1;
+  left: auto;
+  padding-left: 40px;
   padding-top: 27px;
 }
-body .fonctionnement .menu-list .fa-store {
+body .menu-list .fa-store {
   color: var(--Primary, #9356DC);
 }
-body .fonctionnement .menu-list li {
+body .menu-list li {
   width: 322.486px;
   height: 72.379px;
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
   list-style: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #000;
@@ -223,15 +227,17 @@ body .fonctionnement .menu-list li {
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-body .fonctionnement .menu-list li:hover {
+body .menu-list li:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-body section.restaurants {
-  height: 1220px;
+
+section.restaurants {
+  height: auto;
+  width: auto;
   background: var(--Background, #F6F6F6);
 }
-body section.restaurants h2 {
+section.restaurants .restaurant-title {
   width: 275px;
   height: 68px;
   font-family: Roboto;
@@ -243,7 +249,7 @@ body section.restaurants h2 {
   padding-left: 20px;
   margin-bottom: 30px;
 }
-body section.restaurants article.card {
+section.restaurants article.card {
   height: 251px;
   width: 340px;
   display: flex;
@@ -254,7 +260,7 @@ body section.restaurants article.card {
   margin-bottom: 18px;
   position: relative;
 }
-body section.restaurants article.card .info {
+section.restaurants article.card .info {
   width: 80px;
   height: auto;
   display: flex;
@@ -264,7 +270,7 @@ body section.restaurants article.card .info {
   left: 245px;
   top: 35px;
 }
-body section.restaurants article.card .info p {
+section.restaurants article.card .info p {
   width: 80px;
   height: 29px;
   display: flex;
@@ -281,16 +287,16 @@ body section.restaurants article.card .info p {
   top: 5px;
   border-radius: 2px;
 }
-body section.restaurants article.card img {
+section.restaurants article.card img {
   height: 67%;
-  width: 100%;
+  width: auto;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-body section.restaurants article.card .card-content {
+section.restaurants article.card .card-content {
   position: relative;
 }
-body section.restaurants article.card .card-content h3 {
+section.restaurants article.card .card-content h3 {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -301,7 +307,7 @@ body section.restaurants article.card .card-content h3 {
   padding-left: 13px;
   padding-bottom: 5px;
 }
-body section.restaurants article.card .card-content p {
+section.restaurants article.card .card-content p {
   color: #000;
   font-family: Roboto;
   font-size: 17px;
@@ -310,7 +316,7 @@ body section.restaurants article.card .card-content p {
   line-height: normal;
   padding-left: 13px;
 }
-body section.restaurants article.card .card-content i {
+section.restaurants article.card .card-content i {
   font-size: 24px;
   display: flex;
   color: #101010;
@@ -319,10 +325,10 @@ body section.restaurants article.card .card-content i {
   left: 85%;
   transition: background-color 0.3s;
 }
-body section.restaurants article.card .card-content .fa-solid {
+section.restaurants article.card .card-content .fa-solid {
   opacity: 0;
 }
-body section.restaurants article.card .card-content .fa-solid:hover {
+section.restaurants article.card .card-content .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-clip: text;
@@ -330,14 +336,15 @@ body section.restaurants article.card .card-content .fa-solid:hover {
   transition: all 0.4s ease-in-out;
   background-image: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 }
-body .footer {
+
+.footer {
   background-color: #353535;
   height: 186px;
   width: 100%;
   padding: 22px 25px 22px 25px;
   /*icons footer*/
 }
-body .footer h4 {
+.footer h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -351,7 +358,7 @@ body .footer h4 {
   margin-bottom: 16px;
   padding-left: 15px;
 }
-body .footer a {
+.footer a {
   width: 168px;
   color: var(--White, #FFF);
   font-family: Roboto;
@@ -362,18 +369,18 @@ body .footer a {
   text-align: left;
   margin-left: 20px;
 }
-body .footer p {
+.footer p {
   padding-bottom: 7px;
 }
-body .footer .Proposer,
-body .footer .Devenir {
+.footer .Proposer,
+.footer .Devenir {
   padding-left: 22px;
 }
-body .footer .Mentions,
-body .footer .Contact {
+.footer .Mentions,
+.footer .Contact {
   font-weight: 400;
 }
-body .footer .fa-solid {
+.footer .fa-solid {
   color: #FFFFFF;
   display: flex;
   position: absolute;
@@ -382,6 +389,64 @@ body .footer .fa-solid {
   padding-top: 5px;
   gap: 10px;
   padding-left: 22px;
+}
+
+/*media queries*/
+@media screen and (min-width: 768px) {
+  .explorer {
+    height: 209px;
+  }
+  .fonctionnement {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .fonctionnement .fonctionnement-title {
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    left: 100px;
+  }
+  .fonctionnement .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-right: 180px;
+    padding-left: 180px;
+    gap: 45px;
+    position: relative;
+    top: -50%;
+  }
+  .restaurants {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 30px;
+  }
+  .restaurants .restaurant-title {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .restaurants .restaurant-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 50px;
+    grid-auto-flow: row;
+    padding-left: 180px;
+    padding-right: 180px;
+    justify-content: center;
+  }
+  .restaurants .restaurant-card article.card {
+    width: 498px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
