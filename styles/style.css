@@ -15,6 +15,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  margin-right: 0;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -95,7 +96,7 @@ body header form #belleville::placeholder {
 }
 body main .explorer {
   width: auto;
-  height: 327px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,6 +129,7 @@ body main .explorer .button-gradient {
   width: 218px;
   height: 50px;
   margin-top: 40px;
+  margin-bottom: 57px;
   color: var(--White, #FFF);
   text-align: center;
   font-family: Roboto;
@@ -153,7 +155,7 @@ body .fonctionnement {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  margin-bottom: 68px;
 }
 body .fonctionnement .fonctionnement-title {
   display: flex;
@@ -396,6 +398,10 @@ section.restaurants article.card .card-content .fa-solid:hover {
   .explorer {
     height: 209px;
   }
+  .explorer .button-gradient {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   .fonctionnement {
     display: grid;
     justify-content: center;
@@ -406,12 +412,408 @@ section.restaurants article.card .card-content .fa-solid:hover {
     margin-bottom: 50px;
   }
   .fonctionnement .fonctionnement-title {
+    /*media queries*/
+  }
+  .fonctionnement .fonctionnement-title body header h1 {
+    font-family: "shrikhand", cursive;
+    text-align: center;
+    width: auto;
+    height: 63px;
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* Shadow/Badge */
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  .fonctionnement .fonctionnement-title body header form {
+    width: auto;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Grey-2, #EAEAEA);
+  }
+  .fonctionnement .fonctionnement-title body header form #dot {
+    width: 12px;
+    height: 16px;
+    color: var(--Grey, #353535);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 17px;
+  }
+  .fonctionnement .fonctionnement-title body header form #belleville {
+    width: 109px;
+    height: 19px;
+    border: none;
+    background-color: #EAEAEA;
+  }
+  .fonctionnement .fonctionnement-title body header form #belleville::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+  }
+  .fonctionnement .fonctionnement-title body main .explorer {
+    width: auto;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--Background, #F6F6F6);
+    /*hover*/
+  }
+  .fonctionnement .fonctionnement-title body main .explorer h2 {
+    color: #000;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .fonctionnement .fonctionnement-title body main .explorer .decouvrez {
+    width: auto;
+    height: 46px;
+    margin-top: 30px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement-title body main .explorer .button-gradient {
+    width: 218px;
+    height: 50px;
+    margin-top: 40px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    transition: transform 0.3s ease-in-out;
+    /* Shadow/Button */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .fonctionnement .fonctionnement-title body main .explorer .button-gradient:hover {
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .fonctionnement .fonctionnement-title body .fonctionnement {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .fonctionnement .fonctionnement-title body .fonctionnement .fonctionnement-title {
+    display: flex;
+    width: auto;
+    height: 31px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 48px;
+    margin-bottom: 10px;
+    padding-right: 155px;
+  }
+  .fonctionnement .fonctionnement-title body .menu-list {
+    position: relative;
+  }
+  .fonctionnement .fonctionnement-title body .menu-list {
+    /*icons-list*/
+  }
+  .fonctionnement .fonctionnement-title body .menu-list .ellipse {
+    width: 24px;
+    height: 24px;
+    background-color: #9356DC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 14.182px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    top: 50px;
+    right: 10px;
+  }
+  .fonctionnement .fonctionnement-title body .menu-list .fa-solid {
+    font-size: 18px;
+    color: var(--grey-tint-4, #7E7E7E);
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: auto;
+    padding-left: 40px;
+    padding-top: 27px;
+  }
+  .fonctionnement .fonctionnement-title body .menu-list .fa-store {
+    color: var(--Primary, #9356DC);
+  }
+  .fonctionnement .fonctionnement-title body .menu-list li {
+    width: 322.486px;
+    height: 72.379px;
+    border-radius: 20px;
+    background: var(--Background, #F6F6F6);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    /* Shadow/Instructions */
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  .fonctionnement .fonctionnement-title body .menu-list li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .fonctionnement .fonctionnement-title section.restaurants {
+    height: auto;
+    width: auto;
+    background: var(--Background, #F6F6F6);
+  }
+  .fonctionnement .fonctionnement-title section.restaurants .restaurant-title {
+    width: 275px;
+    height: 68px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card {
+    height: 251px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 17px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .info {
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 245px;
+    top: 35px;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .info p {
+    width: 80px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Green-Font, #008766);
+    background-color: #99E2D0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 5px;
+    border-radius: 2px;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card img {
+    height: 67%;
+    width: auto;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .card-content {
+    position: relative;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .card-content h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 16px;
+    padding-left: 13px;
+    padding-bottom: 5px;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .card-content p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 13px;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .card-content i {
+    font-size: 24px;
+    display: flex;
+    color: #101010;
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    transition: background-color 0.3s;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .card-content .fa-solid {
+    opacity: 0;
+  }
+  .fonctionnement .fonctionnement-title section.restaurants article.card .card-content .fa-solid:hover {
+    opacity: 1;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.4s ease-in-out;
+    background-image: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  }
+  .fonctionnement .fonctionnement-title .footer {
+    background-color: #353535;
+    height: 186px;
+    width: 100%;
+    padding: 22px 25px 22px 25px;
+    /*icons footer*/
+  }
+  .fonctionnement .fonctionnement-title .footer h4 {
+    color: #FFFFFF;
+    width: 139px;
+    height: 27px;
+    padding-right: 0px;
+    color: var(--White, #FFF);
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+    padding-left: 15px;
+  }
+  .fonctionnement .fonctionnement-title .footer a {
+    width: 168px;
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .fonctionnement .fonctionnement-title .footer p {
+    padding-bottom: 7px;
+  }
+  .fonctionnement .fonctionnement-title .footer .Proposer,
+  .fonctionnement .fonctionnement-title .footer .Devenir {
+    padding-left: 22px;
+  }
+  .fonctionnement .fonctionnement-title .footer .Mentions,
+  .fonctionnement .fonctionnement-title .footer .Contact {
+    font-weight: 400;
+  }
+  .fonctionnement .fonctionnement-title .footer .fa-solid {
+    color: #FFFFFF;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    padding-top: 5px;
+    gap: 10px;
+    padding-left: 22px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .fonctionnement .fonctionnement-title .explorer {
+    height: 209px;
+  }
+  .fonctionnement .fonctionnement-title .fonctionnement {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .fonctionnement .fonctionnement-title .fonctionnement .fonctionnement-title {
     flex-wrap: wrap;
     position: absolute;
     z-index: 1;
-    bottom: 100px;
+    bottom: 150px;
     left: 100px;
   }
+  .fonctionnement .fonctionnement-title .fonctionnement .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-right: 180px;
+    padding-left: 180px;
+    gap: 45px;
+    position: relative;
+    top: -50%;
+  }
+  .fonctionnement .fonctionnement-title .restaurants {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 30px;
+  }
+  .fonctionnement .fonctionnement-title .restaurants .restaurant-title {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .fonctionnement .fonctionnement-title .restaurants .restaurant-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 50px;
+    grid-auto-flow: row;
+    padding-left: 180px;
+    padding-right: 180px;
+    justify-content: center;
+  }
+  .fonctionnement .fonctionnement-title .restaurants .restaurant-card article.card {
+    width: 498px;
+  }
+}
+@media screen and (min-width: 768px) {
   .fonctionnement .menu-list {
     display: flex;
     flex-direction: row;
@@ -446,6 +848,18 @@ section.restaurants article.card .card-content .fa-solid:hover {
   }
   .restaurants .restaurant-card article.card {
     width: 498px;
+  }
+  nav.footer {
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+  nav.footer h4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
 
