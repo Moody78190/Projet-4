@@ -1,11 +1,8 @@
 body {
-
     header {
-
         h1 {
             font-family: "shrikhand", cursive;
             text-align: center;
-            width: auto;
             height: 63px;
             margin-top: 14px;
             margin-bottom: 0;
@@ -19,16 +16,16 @@ body {
         }
 
         form {
-            width: auto;
+           
             height: 50px;
             margin-top: 0;
             margin-bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: var(--Grey-2, #EAEAEA);
+            background: var(--Grey-2, #eaeaea);
 
-            #dot {
+            #location {
                 width: 12px;
                 height: 16px;
                 color: var(--Grey, #353535);
@@ -36,14 +33,12 @@ body {
                 align-items: center;
                 justify-content: center;
                 padding-right: 17px;
-
             }
 
-            #belleville {
-                width: 109px;
+            #city {
                 height: 19px;
                 border: none;
-                background-color: #EAEAEA;
+                background-color: #eaeaea;
 
                 &::placeholder {
                     font-family: Roboto;
@@ -55,19 +50,16 @@ body {
                 }
             }
         }
-
     }
 
     main {
-
-
         .explorer {
-            width: auto;
+         
             height: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: var(--Background, #F6F6F6);
+            background: var(--Background, #f6f6f6);
 
             h2 {
                 color: #000;
@@ -81,8 +73,8 @@ body {
                 margin-top: 30px;
             }
 
-            .decouvrez {
-                width: auto;
+            .discover {
+              
                 height: 46px;
                 margin-top: 30px;
                 font-family: Roboto;
@@ -98,7 +90,7 @@ body {
                 height: 50px;
                 margin-top: 40px;
                 margin-bottom: 57px;
-                color: var(--White, #FFF);
+                color: var(--White, #fff);
                 text-align: center;
                 font-family: Roboto;
                 font-size: 16px;
@@ -106,10 +98,9 @@ body {
                 font-weight: 500;
                 line-height: normal;
                 border-radius: 25px;
-                background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+                background: var(--Button-Gradient,
+                        linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
                 transition: transform 0.3s ease-in-out;
-
-
 
                 /* Shadow/Button */
                 box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -118,63 +109,36 @@ body {
             /*hover*/
 
             .button-gradient:hover {
-                background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+                background: var(--Button-Gradient,
+                        linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
                 cursor: pointer;
                 transform: scale(1.1);
-
-
-
             }
-
-
         }
-
     }
 
-
-    .fonctionnement {
-        width: auto;
-        height: auto;
+    .functioning {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 68px;
+        padding: 5%;
 
-
-        .fonctionnement-title {
-                display: flex;
-                width: auto;
-                height: 31px;
-                font-family: Roboto;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin-top: 48px;
-                margin-bottom: 10px;
-                padding-right: 155px;
-               
-            
-        }
-    }
-
-        .menu-list {
+        .functioning-list {
             position: relative;
-        }
-
-        .menu-list {
+            width: 100%;
 
             /*icons-list*/
-            .ellipse {
+            .number {
                 width: 24px;
                 height: 24px;
-                background-color: #9356DC;
+                background-color: #9356dc;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: var(--White, #FFF);
+                color: var(--White, #fff);
                 font-family: Roboto;
                 font-size: 14.182px;
                 font-style: normal;
@@ -188,27 +152,23 @@ body {
 
             .fa-solid {
                 font-size: 18px;
-                color: var(--grey-tint-4, #7E7E7E);
+                color: var(--grey-tint-4, #7e7e7e);
                 display: flex;
                 position: absolute;
                 z-index: 1;
                 left: auto;
                 padding-left: 40px;
                 padding-top: 27px;
-
             }
 
             .fa-store {
-                color: var(--Primary, #9356DC);
-                ;
+                color: var(--Primary, #9356dc);
             }
 
-
             li {
-                width: 322.486px;
                 height: 72.379px;
                 border-radius: 20px;
-                background: var(--Background, #F6F6F6);
+                background: var(--Background, #f6f6f6);
                 list-style: none;
                 display: flex;
                 flex-direction: column;
@@ -235,800 +195,239 @@ body {
     }
 
     section.restaurants {
-        height:auto;
-        width: auto;
-        background: var(--Background, #F6F6F6);
-
-        .restaurant-title {
-            width: 275px;
-            height: 68px;
-            font-family: Roboto;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            padding-top: 50px;
-            padding-left: 20px;
-            margin-bottom: 30px;
-        }
-
-        article.card {
-            height: 251px;
-            width: 340px;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            margin-left: 17px;
-            margin-right: 18px;
-            margin-bottom: 18px;
-            position: relative;
-
-            .info {
-                width: 80px;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                left: 245px;
-                top: 35px;
-
-                p {
-                    width: 80px;
-                    height: 29px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: var(--Green-Font, #008766);
-                    background-color: #99E2D0;
-                    font-family: Roboto;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    position: absolute;
-                    top: 5px;
-                    border-radius: 2px;
-                }
-
-            }
-
-            img {
-                height: 67%;
-                width: auto;
-                border-radius: 15px 15px 0px 0px;
-                object-fit: cover;
-
-
-            }
-
-            .card-content {
-                position: relative;
-            }
-
-            .card-content {
-
-                h3 {
-                    color: #000;
-                    font-family: Roboto;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    padding-top: 16px;
-                    padding-left: 13px;
-                    padding-bottom: 5px;
-                }
-
-                p {
-                    color: #000;
-                    font-family: Roboto;
-                    font-size: 17px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
-                    padding-left: 13px;
-                }
-
-                i {
-                    font-size: 24px;
-                    display: flex;
-                    color: #101010;
-                    position: absolute;
-                    top: 35%;
-                    left: 85%;
-                    transition: background-color 0.3s
-                }
-
-                .fa-solid {
-                    opacity: 0;
-
-                    &:hover {
-                        opacity: 1;
-                        color: transparent;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        transition: all 0.4s ease-in-out;
-                        background-image: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-                        ;
-
-
-                    }
-
-
-
-                }
-
-            }
-        }
-
-    }
-
-
-    .footer {
-        background-color: #353535;
-        height: 186px;
-        width: 100%;
-        padding: 22px 25px 22px 25px;
-
-
-        h4 {
-            color: #FFFFFF;
-            width: 139px;
-            height: 27px;
-            padding-right: 0px;
-            color: var(--White, #FFF);
-            font-family: Shrikhand;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            margin-bottom: 16px;
-            padding-left: 15px;
-        }
-
-        a {
-            width: 168px;
-            color: var(--White, #FFF);
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            text-align: left;
-            margin-left: 20px;
-
-        }
-
-        p {
-            padding-bottom: 7px;
-
-        }
-
-        .Proposer,
-        .Devenir {
-            padding-left: 22px;
-
-        }
-
-        .Mentions,
-        .Contact {
-            font-weight: 400;
-
-
-        }
-
-        /*icons footer*/
-        .fa-solid {
-            color: #FFFFFF;
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            left: 20px;
-            padding-top: 5px;
-            gap: 10px;
-            padding-left: 22px;
-
-
-        }
-    }
-
-    /*media queries*/
-    @media screen and (min-width: 768px) {
-
-
-        .explorer {
-            height: 209px;
-
-            .button-gradient{
-                margin-top:auto;
-                margin-bottom:auto;
-            }
-       
-       
-        }
-
-        .fonctionnement {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            width: auto;
-            height: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-
-
-            .fonctionnement-title {
-                body {
-
-    header {
-
-        h1 {
-            font-family: "shrikhand", cursive;
-            text-align: center;
-            width: auto;
-            height: 63px;
-            margin-top: 14px;
-            margin-bottom: 0;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-
-            /* Shadow/Badge */
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        }
-
-        form {
-            width: auto;
-            height: 50px;
-            margin-top: 0;
-            margin-bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: var(--Grey-2, #EAEAEA);
-
-            #dot {
-                width: 12px;
-                height: 16px;
-                color: var(--Grey, #353535);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-right: 17px;
-
-            }
-
-            #belleville {
-                width: 109px;
-                height: 19px;
-                border: none;
-                background-color: #EAEAEA;
-
-                &::placeholder {
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    color: black;
-                }
-            }
-        }
-
-    }
-
-    main {
-
-
-        .explorer {
-            width: auto;
-            height: 327px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: var(--Background, #F6F6F6);
-
-            h2 {
-                color: #000;
-                margin: 0;
-                font-family: Roboto;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                text-align: center;
-                margin-top: 30px;
-            }
-
-            .decouvrez {
-                width: auto;
-                height: 46px;
-                margin-top: 30px;
-                font-family: Roboto;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-                text-align: center;
-            }
-
-            .button-gradient {
-                width: 218px;
-                height: 50px;
-                margin-top: 40px;
-                color: var(--White, #FFF);
-                text-align: center;
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                border-radius: 25px;
-                background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-                transition: transform 0.3s ease-in-out;
-
-
-
-                /* Shadow/Button */
-                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-            }
-
-            /*hover*/
-
-            .button-gradient:hover {
-                background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-                cursor: pointer;
-                transform: scale(1.1);
-
-
-
-            }
-
-
-        }
-
-    }
-
-
-    .fonctionnement {
-        width: auto;
-        height: auto;
+        background: var(--Background, #f6f6f6);
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding: 5%;
 
-
-        .fonctionnement-title {
-                display: flex;
-                width: auto;
-                height: 31px;
-                font-family: Roboto;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin-top: 48px;
-                margin-bottom: 10px;
-                padding-right: 155px;
-               
-            
-        }
-    }
-
-        .menu-list {
-            position: relative;
-        }
-
-        .menu-list {
-
-            /*icons-list*/
-            .ellipse {
-                width: 24px;
-                height: 24px;
-                background-color: #9356DC;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: var(--White, #FFF);
-                font-family: Roboto;
-                font-size: 14.182px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                position: relative;
-                z-index: 1;
-                top: 50px;
-                right: 10px;
-            }
-
-            .fa-solid {
-                font-size: 18px;
-                color: var(--grey-tint-4, #7E7E7E);
-                display: flex;
-                position: absolute;
-                z-index: 1;
-                left: auto;
-                padding-left: 40px;
-                padding-top: 27px;
-
-            }
-
-            .fa-store {
-                color: var(--Primary, #9356DC);
-                ;
-            }
-
-
-            li {
-                width: 322.486px;
-                height: 72.379px;
-                border-radius: 20px;
-                background: var(--Background, #F6F6F6);
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                color: #000;
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                position: relative;
-                transition: transform 0.3s ease-in-out;
-
-                /* Shadow/Instructions */
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-            }
-
-            li:hover {
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-        }
-    }
-
-    section.restaurants {
-        height:auto;
-        width: auto;
-        background: var(--Background, #F6F6F6);
-
-        .restaurant-title {
-            width: 275px;
-            height: 68px;
-            font-family: Roboto;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            padding-top: 50px;
-            padding-left: 20px;
-            margin-bottom: 30px;
-        }
-
-        article.card {
-            height: 251px;
-            width: 340px;
+        .restaurant-card {
             display: flex;
             flex-direction: column;
-            background-color: white;
-            margin-left: 17px;
-            margin-right: 18px;
-            margin-bottom: 18px;
-            position: relative;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
 
-            .info {
-                width: 80px;
-                height: auto;
+            article.card {
+                height: 251px;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                flex-direction: column;
+                background-color: white;
+                margin-bottom: 18px;
                 position: relative;
-                left: 245px;
-                top: 35px;
+                border-radius: 15px;
+                width: 100%;
 
-                p {
+                .info {
                     width: 80px;
                     height: 29px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     color: var(--Green-Font, #008766);
-                    background-color: #99E2D0;
+                    background-color: #99e2d0;
                     font-family: Roboto;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
                     position: absolute;
-                    top: 5px;
+                    top: 15px;
+                    right: 15px;
                     border-radius: 2px;
                 }
 
-            }
-
-            img {
-                height: 67%;
-                width: auto;
-                border-radius: 15px 15px 0px 0px;
-                object-fit: cover;
-
-
-            }
-
-            .card-content {
-                position: relative;
-            }
-
-            .card-content {
-
-                h3 {
-                    color: #000;
-                    font-family: Roboto;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    padding-top: 16px;
-                    padding-left: 13px;
-                    padding-bottom: 5px;
+                img {
+                    height: 67%;
+                    width: auto;
+                    border-radius: 15px 15px 0px 0px;
+                    object-fit: cover;
                 }
 
-                p {
-                    color: #000;
-                    font-family: Roboto;
-                    font-size: 17px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
-                    padding-left: 13px;
+                .card-content {
+                    position: relative;
                 }
 
-                i {
-                    font-size: 24px;
-                    display: flex;
-                    color: #101010;
-                    position: absolute;
-                    top: 35%;
-                    left: 85%;
-                    transition: background-color 0.3s
-                }
-
-                .fa-solid {
-                    opacity: 0;
-
-                    &:hover {
-                        opacity: 1;
-                        color: transparent;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        transition: all 0.4s ease-in-out;
-                        background-image: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-                        ;
-
-
+                .card-content {
+                    h3 {
+                        color: #000;
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        padding-top: 16px;
+                        padding-left: 13px;
+                        padding-bottom: 5px;
                     }
 
+                    p {
+                        color: #000;
+                        font-family: Roboto;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding-left: 13px;
+                    }
 
+                    i {
+                        font-size: 24px;
+                        display: flex;
+                        color: #101010;
+                        position: absolute;
+                        top: 35%;
+                        left: 85%;
+                        transition: background-color 0.3s;
+                    }
 
+                    .fa-solid {
+                        opacity: 0;
+
+                        &:hover {
+                            opacity: 1;
+                            color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            transition: all 0.4s ease-in-out;
+                            background-image: var(--Button-Gradient,
+                                    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+                        }
+                    }
                 }
+            }
+        }
+    }
+}
 
+.footer {
+    background-color: #353535;
+    height: 186px;
+
+    padding: 22px 25px 22px 25px;
+
+    h4 {
+        color: #ffffff;
+        width: 139px;
+        height: 27px;
+        padding-right: 0px;
+        color: var(--White, #fff);
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+        padding-left: 15px;
+    }
+
+    a {
+        flex-wrap: wrap;
+        width: 168px;
+        color: var(--White, #fff);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    p {
+        padding-bottom: 7px;
+    }
+
+    .Proposer,
+    .Devenir {
+        padding-left: 22px;
+    }
+
+    .Mentions,
+    .Contact {
+        font-weight: 400;
+    }
+
+    /*icons footer*/
+    .fa-solid {
+        color: #ffffff;
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        padding-top: 5px;
+        gap: 10px;
+        padding-left: 22px;
+    }
+}
+
+/*media queries*/
+@media screen and (min-width: 1024px) {
+    body {
+        .functioning {
+            .functioning-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                a {
+                    width: 30%;
+                }
             }
         }
 
-    }
-
-
-    .footer {
-        background-color: #353535;
-        height: 186px;
-        width: 100%;
-        padding: 22px 25px 22px 25px;
-
-
-        h4 {
-            color: #FFFFFF;
-            width: 139px;
-            height: 27px;
-            padding-right: 0px;
-            color: var(--White, #FFF);
-            font-family: Shrikhand;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            margin-bottom: 16px;
-            padding-left: 15px;
-        }
-
-        a {
-            width: 168px;
-            color: var(--White, #FFF);
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            text-align: left;
-            margin-left: 20px;
-
-        }
-
-        p {
-            padding-bottom: 7px;
-
-        }
-
-        .Proposer,
-        .Devenir {
-            padding-left: 22px;
-
-        }
-
-        .Mentions,
-        .Contact {
-            font-weight: 400;
-
-
-        }
-
-        /*icons footer*/
-        .fa-solid {
-            color: #FFFFFF;
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            left: 20px;
-            padding-top: 5px;
-            gap: 10px;
-            padding-left: 22px;
-
-
-        }
-    }
-
-    /*media queries*/
-    @media screen and (min-width: 768px) {
-
-
-        .explorer {
-            height: 209px;
-        }
-
-        .fonctionnement {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            width: auto;
-            height: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-
-
-          .fonctionnement-title {
+        section.restaurants {
+            .restaurant-card {
+                flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: space-between;
+
+                article.card {
+                    width: 47%;
+                }
+            }
+        }
+
+        nav.footer {
+            height: 114px;
+            display: flex;
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left: 85%;
+                top: 38%;
+            }
+
+            .links {
+              
+                display: flex;
+                flex-direction: row;
+                justify-items: left;
+                align-items: center;
+                position: relative;
+                top: 20%;
+                left: 20%;
+            }
+
+            .fa-handshake-angle {
+                display: flex;
                 position: absolute;
                 z-index: 1;
-                bottom: 150px;
-                left: 100px;
- }
+                left: 18.5%;
+                top: 28%;
+            }
 
-
-            .menu-list {
+            .fa-utensils {
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-content: center;
-                padding-right: 180px;
-                padding-left: 180px;
-                gap: 45px;
-                position: relative;
-                top: -50%;
+                position: absolute;
+                z-index: 1;
+                left: -0.5%;
+                top: 29%;
             }
         }
-
-        .restaurants{
-            padding-left: 180px;
-            padding-right: 180px;
-           padding-bottom: 30px;
-        
-        .restaurant-title{
-            display: flex;
-            flex-wrap: wrap;
-            text-align: left;
-            padding-left: 10px;
-        }
-        .restaurant-card{
-            
-                display: grid;
-                grid-template-columns: 2fr 1fr ;
-                grid-template-rows: 1fr 1fr ;
-                gap:50px 50px;
-                grid-auto-flow: row;
-                padding-left: 180px;
-                padding-right: 180px;
-                justify-content: center;
-               
-             article.card {
-                    width: 498px;
-                  }
-              }
-
-              
-            }
-    
-        }
-
-
-    
-
     }
-
-
-            .menu-list {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-content: center;
-                padding-right: 180px;
-                padding-left: 180px;
-                gap: 45px;
-                position: relative;
-                top: -50%;
-            }
-        }
-
-        .restaurants{
-            padding-left: 180px;
-            padding-right: 180px;
-           padding-bottom: 30px;
-        
-        .restaurant-title{
-            display: flex;
-            flex-wrap: wrap;
-            text-align: left;
-            padding-left: 10px;
-        }
-        .restaurant-card{
-            
-                display: grid;
-                grid-template-columns: 2fr 1fr ;
-                grid-template-rows: 1fr 1fr ;
-                gap:50px 50px;
-                grid-auto-flow: row;
-                padding-left: 180px;
-                padding-right: 180px;
-                justify-content: center;
-               
-             article.card {
-                    width: 498px;
-                  }
-              }
-            }
-            nav.footer{
-                height: 114px;
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: flex-start;
-                padding-top: 60px;
-                
-                
-                
-            
-            h4{
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: flex-end;
-            }
-            }
-    
-    }
-
-
-    
+}
