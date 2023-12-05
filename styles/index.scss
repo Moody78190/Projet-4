@@ -1,60 +1,103 @@
+
 body {
-    .loader {
-        display: flex;
-        position: absolute;
-        justify-content: center;
+    .loader-body{
+        background-color:#ffffff;
+        padding: 0;
+        margin: 0;
+        height:100vh;
+        display:flex;
         align-items: center;
-        left: 40%;
-        top: 50%;
+        justify-content: center;
+        position: fixed;
         z-index: 2;
-        font-size: 62px;
-        font-family: shrikhand;
-        font-weight: bolder;
-        color: #9356dc;
-        animation: swirl-in-fwd 3s ease-in-out infinite forwards;
-    
-        /**
-         * ----------------------------------------
-         * Animation swirl-in-fwd
-         * ----------------------------------------
-         */
-        @keyframes swirl-in-fwd {
-            0% {
-                transform: rotate(-540deg) scale(0);
-                opacity: 0;
-            }
-            100% {
-                transform: rotate(0) scale(1);
-                opacity: 1;
-            }
+        inset: 0;
+        animation:fade-out 1s 13s forwards;
+        transform-origin: top;
+       
+      
+      }
+      @keyframes fade-out{
+        from{
+            transform:scale(1);
         }
+        to{
+            transform:scale(0);
+        }
+      }
+      
+      .loader{
+        display: flex;
+        justify-items: center;
+        -webkit-perspective:700px;
+        perspective: 700px;
+        
+      }
+      .knife-fork{
+        font-size: 130px;
+        display: flex;
+        font-size: 130px;
+        position: relative;
+        left: -13px;
+        bottom:-4px;
     }
-   /**
- * Ajout de l'animation fade-out après un certain délai
- */
-.loader.fade-out {
-    animation: fade-out 1s forwards;
-    animation-delay: 1s; /* Déclenche la disparition après 3 secondes */
-}
+        
+       
+      }
+      .loader>span{
+        font-size: 130px;
+        font-family: shrikhand;
+        display: inline-block;
+        animation:flip 4.6s infinite linear;
+        transform-origin:0 70%;
+        transform-style:preserve-3d;
+        -webkit-transform-style:preserve-3d;
+      
+       
+       
+      }
 
-/**
- * ----------------------------------------
- * Animation fade-out
- * ----------------------------------------
- */
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        display: none; /* Cache l'élément une fois l'animation terminée */
-    }
-}
-
-
-    
-    header {
+      
+      @keyframes flip{
+        35%{
+          transform: rotateX(360deg);
+        }
+        100%{
+          transform: rotatex(360deg);
+        }
+      }
+      
+      
+      .loader>span:nth-child(even){
+        color:#9356dc;
+      
+      }
+      
+      .loader>span:nth-child(2){
+        animation-delay: 0.3s;
+      }
+      
+      .loader>span:nth-child(3){
+        animation-delay: 0.6s;
+      }
+      
+      .loader>span:nth-child(4){
+        animation-delay: 0.9s;
+      }
+      
+      .loader>span:nth-child(5){
+        animation-delay: 1.2s;
+      }
+      
+      .loader>span:nth-child(6){
+        animation-delay: 1.5s
+      }
+      
+      .loader>span:nth-child(7){
+        animation-delay: 1.8s
+      }
+      
+      
+      header {
         h1 {
             font-family: "shrikhand", cursive;
             text-align: center;
@@ -353,7 +396,7 @@ body {
             }
         }
     }
-}
+
 
 .footer {
     background-color: #353535;

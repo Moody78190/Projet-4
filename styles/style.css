@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 /* reset*/
@@ -59,59 +58,90 @@ h2 {
   width: 100%;
 }
 
-body {
-  /**
-  * Ajout de l'animation fade-out après un certain délai
-  */
-  /**
-   * ----------------------------------------
-   * Animation fade-out
-   * ----------------------------------------
-   */
+body .loader-body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  animation: fade-out 1s 13s forwards;
+  transform-origin: top;
+}
+@keyframes fade-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
 body .loader {
   display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  left: 40%;
-  top: 50%;
-  z-index: 2;
-  font-size: 62px;
+  justify-items: center;
+  -webkit-perspective: 700px;
+  perspective: 700px;
+}
+body .knife-fork {
+  font-size: 130px;
+  display: flex;
+  font-size: 130px;
+  position: relative;
+  left: -13px;
+  bottom: -4px;
+}
+
+.loader > span {
+  font-size: 130px;
   font-family: shrikhand;
-  font-weight: bolder;
+  display: inline-block;
+  animation: flip 4.6s infinite linear;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+@keyframes flip {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotatex(360deg);
+  }
+}
+.loader > span:nth-child(even) {
   color: #9356dc;
-  animation: swirl-in-fwd 3s ease-in-out infinite forwards;
-  /**
-   * ----------------------------------------
-   * Animation swirl-in-fwd
-   * ----------------------------------------
-   */
 }
-@keyframes swirl-in-fwd {
-  0% {
-    transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
+
+.loader > span:nth-child(2) {
+  animation-delay: 0.3s;
 }
-body .loader.fade-out {
-  animation: fade-out 1s forwards;
-  animation-delay: 1s; /* Déclenche la disparition après 3 secondes */
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.6s;
 }
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none; /* Cache l'élément une fois l'animation terminée */
-  }
+
+.loader > span:nth-child(4) {
+  animation-delay: 0.9s;
 }
-body header h1 {
+
+.loader > span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.loader > span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.loader > span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+header h1 {
   font-family: "shrikhand", cursive;
   text-align: center;
   height: 63px;
@@ -124,7 +154,7 @@ body header h1 {
   /* Shadow/Badge */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-body header form {
+header form {
   height: 50px;
   margin-top: 0;
   margin-bottom: 0;
@@ -133,7 +163,7 @@ body header form {
   align-items: center;
   background: var(--Grey-2, #eaeaea);
 }
-body header form #location {
+header form #location {
   width: 12px;
   height: 16px;
   color: var(--Grey, #353535);
@@ -142,12 +172,12 @@ body header form #location {
   justify-content: center;
   padding-right: 17px;
 }
-body header form #city {
+header form #city {
   height: 19px;
   border: none;
   background-color: #eaeaea;
 }
-body header form #city::placeholder {
+header form #city::placeholder {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -155,7 +185,8 @@ body header form #city::placeholder {
   line-height: normal;
   color: black;
 }
-body main .explorer {
+
+main .explorer {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -163,7 +194,7 @@ body main .explorer {
   background: var(--Background, #f6f6f6);
   /*hover*/
 }
-body main .explorer h2 {
+main .explorer h2 {
   color: #000;
   margin: 0;
   font-family: Roboto;
@@ -174,7 +205,7 @@ body main .explorer h2 {
   text-align: center;
   margin-top: 30px;
 }
-body main .explorer .discover {
+main .explorer .discover {
   height: 46px;
   margin-top: 30px;
   font-family: Roboto;
@@ -184,7 +215,7 @@ body main .explorer .discover {
   line-height: normal;
   text-align: center;
 }
-body main .explorer .button-gradient {
+main .explorer .button-gradient {
   width: 218px;
   height: 50px;
   margin-top: 40px;
@@ -202,25 +233,26 @@ body main .explorer .button-gradient {
   /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-body main .explorer .button-gradient:hover {
+main .explorer .button-gradient:hover {
   background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transform: scale(1.1);
 }
-body .functioning {
+
+.functioning {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 68px;
   padding: 5%;
 }
-body .functioning .functioning-list {
+.functioning .functioning-list {
   position: relative;
   width: 100%;
   /*icons-list*/
 }
-body .functioning .functioning-list .number {
+.functioning .functioning-list .number {
   width: 24px;
   height: 24px;
   background-color: #9356dc;
@@ -239,7 +271,7 @@ body .functioning .functioning-list .number {
   top: 50px;
   right: 10px;
 }
-body .functioning .functioning-list .fa-solid {
+.functioning .functioning-list .fa-solid {
   font-size: 18px;
   color: var(--grey-tint-4, #7e7e7e);
   display: flex;
@@ -249,10 +281,10 @@ body .functioning .functioning-list .fa-solid {
   padding-left: 40px;
   padding-top: 27px;
 }
-body .functioning .functioning-list .fa-store {
+.functioning .functioning-list .fa-store {
   color: var(--Primary, #9356dc);
 }
-body .functioning .functioning-list li {
+.functioning .functioning-list li {
   height: 72.379px;
   border-radius: 20px;
   background: var(--Background, #f6f6f6);
@@ -272,25 +304,26 @@ body .functioning .functioning-list li {
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-body .functioning .functioning-list li:hover {
+.functioning .functioning-list li:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-body section.restaurants {
+
+section.restaurants {
   background: var(--Background, #f6f6f6);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5%;
 }
-body section.restaurants .restaurant-card {
+section.restaurants .restaurant-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin-top: 20px;
 }
-body section.restaurants .restaurant-card article.card {
+section.restaurants .restaurant-card article.card {
   height: 251px;
   display: flex;
   flex-direction: column;
@@ -300,7 +333,7 @@ body section.restaurants .restaurant-card article.card {
   border-radius: 15px;
   width: 100%;
 }
-body section.restaurants .restaurant-card article.card .info {
+section.restaurants .restaurant-card article.card .info {
   width: 80px;
   height: 29px;
   display: flex;
@@ -318,16 +351,16 @@ body section.restaurants .restaurant-card article.card .info {
   right: 15px;
   border-radius: 2px;
 }
-body section.restaurants .restaurant-card article.card img {
+section.restaurants .restaurant-card article.card img {
   height: 67%;
   width: auto;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-body section.restaurants .restaurant-card article.card .card-content {
+section.restaurants .restaurant-card article.card .card-content {
   position: relative;
 }
-body section.restaurants .restaurant-card article.card .card-content h3 {
+section.restaurants .restaurant-card article.card .card-content h3 {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -338,7 +371,7 @@ body section.restaurants .restaurant-card article.card .card-content h3 {
   padding-left: 13px;
   padding-bottom: 5px;
 }
-body section.restaurants .restaurant-card article.card .card-content p {
+section.restaurants .restaurant-card article.card .card-content p {
   color: #000;
   font-family: Roboto;
   font-size: 17px;
@@ -347,7 +380,7 @@ body section.restaurants .restaurant-card article.card .card-content p {
   line-height: normal;
   padding-left: 13px;
 }
-body section.restaurants .restaurant-card article.card .card-content i {
+section.restaurants .restaurant-card article.card .card-content i {
   font-size: 24px;
   display: flex;
   color: #101010;
@@ -356,10 +389,10 @@ body section.restaurants .restaurant-card article.card .card-content i {
   left: 85%;
   transition: background-color 0.3s;
 }
-body section.restaurants .restaurant-card article.card .card-content .fa-solid {
+section.restaurants .restaurant-card article.card .card-content .fa-solid {
   opacity: 0;
 }
-body section.restaurants .restaurant-card article.card .card-content .fa-solid:hover {
+section.restaurants .restaurant-card article.card .card-content .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-clip: text;
