@@ -1,4 +1,59 @@
 body {
+    .loader {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 40%;
+        top: 50%;
+        z-index: 2;
+        font-size: 62px;
+        font-family: shrikhand;
+        font-weight: bolder;
+        color: #9356dc;
+        animation: swirl-in-fwd 3s ease-in-out infinite forwards;
+    
+        /**
+         * ----------------------------------------
+         * Animation swirl-in-fwd
+         * ----------------------------------------
+         */
+        @keyframes swirl-in-fwd {
+            0% {
+                transform: rotate(-540deg) scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0) scale(1);
+                opacity: 1;
+            }
+        }
+    }
+   /**
+ * Ajout de l'animation fade-out après un certain délai
+ */
+.loader.fade-out {
+    animation: fade-out 1s forwards;
+    animation-delay: 1s; /* Déclenche la disparition après 3 secondes */
+}
+
+/**
+ * ----------------------------------------
+ * Animation fade-out
+ * ----------------------------------------
+ */
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; /* Cache l'élément une fois l'animation terminée */
+    }
+}
+
+
+    
     header {
         h1 {
             font-family: "shrikhand", cursive;
@@ -373,7 +428,10 @@ body {
 
                 a {
                     width: 30%;
-                }
+              
+            }
+            
+           
             }
         }
 
@@ -410,14 +468,14 @@ body {
                 align-items: center;
                 position: relative;
                 top: 20%;
-                left: 20%;
+                left: 30%;
             }
 
             .fa-handshake-angle {
                 display: flex;
                 position: absolute;
                 z-index: 1;
-                left: 18.5%;
+                left: 33%;
                 top: 28%;
             }
 
