@@ -1,0 +1,96 @@
+/* Mixin pour les styles de .number*/
+@mixin number-styles {
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White, #fff);
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  right: 10px;
+}
+
+
+// media-queries.scss
+
+// Mixin pour les media queries
+@mixin custom-media-styles {
+    @media screen and (min-width: 1024px) {
+      body {
+        .functioning {
+          .functioning-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+  
+            a {
+              width: 30%;
+            }
+          }
+        }
+  
+        section.restaurants {
+          .restaurant-card {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+  
+            article.card {
+              width: 47%;
+            }
+          }
+        }
+  
+        nav.footer {
+          height: 114px;
+          display: flex;
+  
+          .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 85%;
+            top: 38%;
+          }
+  
+          .links {
+            display: flex;
+            flex-direction: row;
+            justify-items: left;
+            align-items: center;
+            position: relative;
+            top: 20%;
+            left: 30%;
+          }
+  
+          .fa-handshake-angle {
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            left: 33%;
+            top: 28%;
+          }
+  
+          .fa-utensils {
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            left: -0.5%;
+            top: 29%;
+          }
+        }
+      }
+    }
+  }
+  

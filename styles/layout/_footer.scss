@@ -1,0 +1,61 @@
+.footer {
+    background-color: #353535;
+    height: 186px;
+
+    padding: 22px 25px 22px 25px;
+
+    h4 {
+        color: #ffffff;
+        width: 139px;
+        height: 27px;
+        padding-right: 0px;
+        color: var(--White, #fff);
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+        padding-left: 15px;
+    }
+
+    a {
+        flex-wrap: wrap;
+        width: 168px;
+        color: var(--White, #fff);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    p {
+        padding-bottom: 7px;
+    }
+    
+    /*footer links*/
+    .Proposer,
+    .Devenir {
+        padding-left: 22px;
+    }
+
+    .Mentions,
+    .Contact {
+        font-weight: 400;
+    }
+
+    /*icons footer*/
+    .fa-solid {
+        color: #ffffff;
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        padding-top: 5px;
+        gap: 10px;
+        padding-left: 22px;
+    }
+}

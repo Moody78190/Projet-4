@@ -1,5 +1,249 @@
+/* Mixin pour les styles de .number*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+body main .explorer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--Background, #f6f6f6);
+}
+body main .explorer h2 {
+  color: #000;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: 30px;
+}
+body main .explorer .discover {
+  height: 46px;
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}
+body .functioning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 68px;
+  padding: 5%;
+}
+body .functioning .functioning-list {
+  position: relative;
+  width: 100%;
+  /*icons-list*/
+}
+body .functioning .functioning-list .number {
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White, #fff);
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  right: 10px;
+}
+body .functioning .functioning-list .fa-solid {
+  font-size: 18px;
+  color: var(--grey-tint-4, #7e7e7e);
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: auto;
+  padding-left: 40px;
+  padding-top: 27px;
+}
+body .functioning .functioning-list .fa-store {
+  color: var(--Primary, #9356dc);
+}
+body .functioning .functioning-list li {
+  height: 72.379px;
+  border-radius: 20px;
+  background: var(--Background, #f6f6f6);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+body .functioning .functioning-list li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body section.restaurants {
+  background: var(--Background, #f6f6f6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+body section.restaurants .restaurant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+body section.restaurants .restaurant-card article.card {
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 18px;
+  position: relative;
+  border-radius: 15px;
+  width: 100%;
+}
+body section.restaurants .restaurant-card article.card .info {
+  width: 80px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Green-Font, #008766);
+  background-color: #99e2d0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 2px;
+}
+body section.restaurants .restaurant-card article.card img {
+  height: 67%;
+  width: auto;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+body section.restaurants .restaurant-card article.card .card-content {
+  position: relative;
+}
+body section.restaurants .restaurant-card article.card .card-content h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-bottom: 5px;
+}
+body section.restaurants .restaurant-card article.card .card-content p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: 13px;
+}
+body section.restaurants .restaurant-card article.card .card-content i {
+  font-size: 24px;
+  display: flex;
+  color: #101010;
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transition: background-color 0.3s;
+}
+body section.restaurants .restaurant-card article.card .card-content .fa-solid {
+  opacity: 0;
+}
+body section.restaurants .restaurant-card article.card .card-content .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+}
+
+/*media queries*/
+@media screen and (min-width: 1024px) {
+  body .functioning .functioning-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body .functioning .functioning-list a {
+    width: 30%;
+  }
+  body section.restaurants .restaurant-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body section.restaurants .restaurant-card article.card {
+    width: 47%;
+  }
+  body nav.footer {
+    height: 114px;
+    display: flex;
+  }
+  body nav.footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 85%;
+    top: 38%;
+  }
+  body nav.footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: center;
+    position: relative;
+    top: 20%;
+    left: 30%;
+  }
+  body nav.footer .fa-handshake-angle {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 33%;
+    top: 28%;
+  }
+  body nav.footer .fa-utensils {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: -0.5%;
+    top: 29%;
+  }
+}
 /* reset*/
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
@@ -58,7 +302,7 @@ h2 {
   width: 100%;
 }
 
-body .loader-body {
+.loader-body {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
@@ -72,6 +316,7 @@ body .loader-body {
   animation: fade-out 1s 13s forwards;
   transform-origin: top;
 }
+
 @keyframes fade-out {
   from {
     transform: scale(1);
@@ -80,13 +325,14 @@ body .loader-body {
     transform: scale(0);
   }
 }
-body .loader {
+.loader {
   display: flex;
   justify-items: center;
   -webkit-perspective: 700px;
   perspective: 700px;
 }
-body .knife-fork {
+
+.knife-fork {
   font-size: 130px;
   display: flex;
   font-size: 130px;
@@ -154,7 +400,8 @@ header h1 {
   /* Shadow/Badge */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-header form {
+
+form {
   height: 50px;
   margin-top: 0;
   margin-bottom: 0;
@@ -163,7 +410,7 @@ header form {
   align-items: center;
   background: var(--Grey-2, #eaeaea);
 }
-header form #location {
+form #location {
   width: 12px;
   height: 16px;
   color: var(--Grey, #353535);
@@ -172,12 +419,12 @@ header form #location {
   justify-content: center;
   padding-right: 17px;
 }
-header form #city {
+form #city {
   height: 19px;
   border: none;
   background-color: #eaeaea;
 }
-header form #city::placeholder {
+form #city::placeholder {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -186,36 +433,7 @@ header form #city::placeholder {
   color: black;
 }
 
-main .explorer {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--Background, #f6f6f6);
-  /*hover*/
-}
-main .explorer h2 {
-  color: #000;
-  margin: 0;
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-  margin-top: 30px;
-}
-main .explorer .discover {
-  height: 46px;
-  margin-top: 30px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-align: center;
-}
-main .explorer .button-gradient {
+.button-gradient {
   width: 218px;
   height: 50px;
   margin-top: 40px;
@@ -233,178 +451,20 @@ main .explorer .button-gradient {
   /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-main .explorer .button-gradient:hover {
+
+/*hover*/
+.button-gradient:hover {
   background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.functioning {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 68px;
-  padding: 5%;
-}
-.functioning .functioning-list {
-  position: relative;
-  width: 100%;
-  /*icons-list*/
-}
-.functioning .functioning-list .number {
-  width: 24px;
-  height: 24px;
-  background-color: #9356dc;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--White, #fff);
-  font-family: Roboto;
-  font-size: 14.182px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  position: relative;
-  z-index: 1;
-  top: 50px;
-  right: 10px;
-}
-.functioning .functioning-list .fa-solid {
-  font-size: 18px;
-  color: var(--grey-tint-4, #7e7e7e);
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: auto;
-  padding-left: 40px;
-  padding-top: 27px;
-}
-.functioning .functioning-list .fa-store {
-  color: var(--Primary, #9356dc);
-}
-.functioning .functioning-list li {
-  height: 72.379px;
-  border-radius: 20px;
-  background: var(--Background, #f6f6f6);
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-  /* Shadow/Instructions */
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-.functioning .functioning-list li:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-section.restaurants {
-  background: var(--Background, #f6f6f6);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5%;
-}
-section.restaurants .restaurant-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}
-section.restaurants .restaurant-card article.card {
-  height: 251px;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  margin-bottom: 18px;
-  position: relative;
-  border-radius: 15px;
-  width: 100%;
-}
-section.restaurants .restaurant-card article.card .info {
-  width: 80px;
-  height: 29px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--Green-Font, #008766);
-  background-color: #99e2d0;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  border-radius: 2px;
-}
-section.restaurants .restaurant-card article.card img {
-  height: 67%;
-  width: auto;
-  border-radius: 15px 15px 0px 0px;
-  object-fit: cover;
-}
-section.restaurants .restaurant-card article.card .card-content {
-  position: relative;
-}
-section.restaurants .restaurant-card article.card .card-content h3 {
-  color: #000;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-top: 16px;
-  padding-left: 13px;
-  padding-bottom: 5px;
-}
-section.restaurants .restaurant-card article.card .card-content p {
-  color: #000;
-  font-family: Roboto;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  padding-left: 13px;
-}
-section.restaurants .restaurant-card article.card .card-content i {
-  font-size: 24px;
-  display: flex;
-  color: #101010;
-  position: absolute;
-  top: 35%;
-  left: 85%;
-  transition: background-color 0.3s;
-}
-section.restaurants .restaurant-card article.card .card-content .fa-solid {
-  opacity: 0;
-}
-section.restaurants .restaurant-card article.card .card-content .fa-solid:hover {
-  opacity: 1;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 0.4s ease-in-out;
-  background-image: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
-}
-
 .footer {
   background-color: #353535;
   height: 186px;
   padding: 22px 25px 22px 25px;
+  /*footer links*/
   /*icons footer*/
 }
 .footer h4 {
@@ -453,62 +513,6 @@ section.restaurants .restaurant-card article.card .card-content .fa-solid:hover 
   padding-top: 5px;
   gap: 10px;
   padding-left: 22px;
-}
-
-/*media queries*/
-@media screen and (min-width: 1024px) {
-  body .functioning .functioning-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  body .functioning .functioning-list a {
-    width: 30%;
-  }
-  body section.restaurants .restaurant-card {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  body section.restaurants .restaurant-card article.card {
-    width: 47%;
-  }
-  body nav.footer {
-    height: 114px;
-    display: flex;
-  }
-  body nav.footer .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 85%;
-    top: 38%;
-  }
-  body nav.footer .links {
-    display: flex;
-    flex-direction: row;
-    justify-items: left;
-    align-items: center;
-    position: relative;
-    top: 20%;
-    left: 30%;
-  }
-  body nav.footer .fa-handshake-angle {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 33%;
-    top: 28%;
-  }
-  body nav.footer .fa-utensils {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    left: -0.5%;
-    top: 29%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

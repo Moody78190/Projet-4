@@ -1,2 +1,10 @@
-@import './shared.scss';
+
 @import './index.scss';
+@import'./base/reset';
+@import'./utils/animations.scss';
+@import'./layout/_header.scss';
+@import'./layout/form.scss';
+@import'./components/_button-gradient.scss';
+@import'./layout/footer.scss';
+
+
