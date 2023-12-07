@@ -1,10 +1,12 @@
 
 @import './index.scss';
 @import'./base/reset';
-@import'./utils/animations.scss';
-@import'./layout/_header.scss';
-@import'./layout/form.scss';
-@import'./components/_button-gradient.scss';
-@import'./layout/footer.scss';
+@import'./utils/animations';
+@import'./layout/_header';
+@import'./layout/form';
+@import'./components/_button-gradient';
+@import'./layout/footer';
+@import'./utils/colors';
+@import'./restaurants-pages/la palette du gout.scss';
 
 

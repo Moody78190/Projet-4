@@ -6,7 +6,7 @@ body main .explorer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--Background, #f6f6f6);
+  background: #F3F3F3;
 }
 body main .explorer h2 {
   color: #000;
@@ -37,6 +37,7 @@ body .functioning {
   padding: 5%;
 }
 body .functioning .functioning-list {
+  flex-wrap: wrap;
   position: relative;
   width: 100%;
   /*icons-list*/
@@ -44,12 +45,12 @@ body .functioning .functioning-list {
 body .functioning .functioning-list .number {
   width: 24px;
   height: 24px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--White, #fff);
+  color: #FFFFFF;
   font-family: Roboto;
   font-size: 14.182px;
   font-style: normal;
@@ -62,7 +63,7 @@ body .functioning .functioning-list .number {
 }
 body .functioning .functioning-list .fa-solid {
   font-size: 18px;
-  color: var(--grey-tint-4, #7e7e7e);
+  color: #7e7e7e;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -71,12 +72,12 @@ body .functioning .functioning-list .fa-solid {
   padding-top: 27px;
 }
 body .functioning .functioning-list .fa-store {
-  color: var(--Primary, #9356dc);
+  color: #9356DC;
 }
 body .functioning .functioning-list li {
   height: 72.379px;
   border-radius: 20px;
-  background: var(--Background, #f6f6f6);
+  background: #f6f6f6;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -98,7 +99,7 @@ body .functioning .functioning-list li:hover {
   transform: scale(1.1);
 }
 body section.restaurants {
-  background: var(--Background, #f6f6f6);
+  background: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +116,7 @@ body section.restaurants .restaurant-card article.card {
   height: 251px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #FFFFFF;
   margin-bottom: 18px;
   position: relative;
   border-radius: 15px;
@@ -127,8 +128,8 @@ body section.restaurants .restaurant-card article.card .info {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--Green-Font, #008766);
-  background-color: #99e2d0;
+  color: #008766;
+  background-color: #99E2D0;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -214,6 +215,7 @@ body section.restaurants .restaurant-card article.card .card-content .fa-solid:h
   }
   body nav.footer .logo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -221,13 +223,17 @@ body section.restaurants .restaurant-card article.card .card-content .fa-solid:h
     top: 38%;
   }
   body nav.footer .links {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-items: left;
     align-items: center;
     position: relative;
     top: 20%;
-    left: 30%;
+    left: 20%;
+  }
+  body nav.footer a {
+    margin-left: 17px;
   }
   body nav.footer .fa-handshake-angle {
     display: flex;
@@ -303,7 +309,7 @@ h2 {
 }
 
 .loader-body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -360,7 +366,7 @@ h2 {
   }
 }
 .loader > span:nth-child(even) {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .loader > span:nth-child(2) {
@@ -403,17 +409,16 @@ header h1 {
 
 form {
   height: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--Grey-2, #eaeaea);
+  padding-left: 8%;
+  background: #eaeaea;
 }
 form #location {
   width: 12px;
   height: 16px;
-  color: var(--Grey, #353535);
+  color: #353535;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -430,7 +435,7 @@ form #city::placeholder {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: black;
+  color: #000;
 }
 
 .button-gradient {
@@ -438,7 +443,7 @@ form #city::placeholder {
   height: 50px;
   margin-top: 40px;
   margin-bottom: 57px;
-  color: var(--White, #fff);
+  color: #FFFFFF;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -468,11 +473,11 @@ form #city::placeholder {
   /*icons footer*/
 }
 .footer h4 {
-  color: #ffffff;
+  color: #FFFFFF;
   width: 139px;
   height: 27px;
   padding-right: 0px;
-  color: var(--White, #fff);
+  color: #FFFFFF;
   font-family: Shrikhand;
   font-size: 18px;
   font-style: normal;
@@ -484,14 +489,13 @@ form #city::placeholder {
 .footer a {
   flex-wrap: wrap;
   width: 168px;
-  color: var(--White, #fff);
+  color: #FFFFFF;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-align: left;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .footer p {
   padding-bottom: 7px;
@@ -500,12 +504,12 @@ form #city::placeholder {
 .footer .Devenir {
   padding-left: 22px;
 }
-.footer .Mentions,
+.footer.Mentions,
 .footer .Contact {
   font-weight: 400;
 }
 .footer .fa-solid {
-  color: #ffffff;
+  color: #FFFFFF;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -513,6 +517,14 @@ form #city::placeholder {
   padding-top: 5px;
   gap: 10px;
   padding-left: 22px;
+}
+
+.hero {
+  height: 275px;
+}
+.hero img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

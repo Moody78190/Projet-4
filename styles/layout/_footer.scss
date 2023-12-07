@@ -1,15 +1,15 @@
 .footer {
-    background-color: #353535;
+    background-color:$grey;
     height: 186px;
 
     padding: 22px 25px 22px 25px;
 
-    h4 {
-        color: #ffffff;
+    & h4 {
+        color:$white;
         width: 139px;
         height: 27px;
         padding-right: 0px;
-        color: var(--White, #fff);
+        color: $white;
         font-family: Shrikhand;
         font-size: 18px;
         font-style: normal;
@@ -19,37 +19,36 @@
         padding-left: 15px;
     }
 
-    a {
+   & a {
         flex-wrap: wrap;
         width: 168px;
-        color: var(--White, #fff);
+        color: $white;
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        text-align: left;
-        margin-left: 20px;
+        margin-left: 60px;
     }
 
-    p {
+   & p {
         padding-bottom: 7px;
     }
     
     /*footer links*/
-    .Proposer,
+   & .Proposer,
     .Devenir {
         padding-left: 22px;
     }
 
-    .Mentions,
+    &.Mentions,
     .Contact {
         font-weight: 400;
     }
 
     /*icons footer*/
-    .fa-solid {
-        color: #ffffff;
+   & .fa-solid {
+        color:$white;
         display: flex;
         position: absolute;
         z-index: 1;

@@ -1,4 +1,5 @@
-@import'./utils/mixins.scss';
+@import'./utils/mixins';
+@import'./utils/colors';
 
 body {
    
@@ -9,10 +10,10 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: var(--Background, #f6f6f6);
+            background: $light-grey;
 
             h2 {
-                color: #000;
+                color: $black-2;
                 margin: 0;
                 font-family: Roboto;
                 font-size: 24px;
@@ -38,6 +39,7 @@ body {
     }
 
     .functioning {
+       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,6 +47,7 @@ body {
         padding: 5%;
 
         .functioning-list {
+            flex-wrap: wrap;
             position: relative;
             width: 100%;
 
@@ -55,7 +58,7 @@ body {
 
             .fa-solid {
                 font-size: 18px;
-                color: var(--grey-tint-4, #7e7e7e);
+                color: $grey-tint-4;
                 display: flex;
                 position: absolute;
                 z-index: 1;
@@ -65,13 +68,13 @@ body {
             }
 
             .fa-store {
-                color: var(--Primary, #9356dc);
+                color:$primary;
             }
 
             li {
                 height: 72.379px;
                 border-radius: 20px;
-                background: var(--Background, #f6f6f6);
+                background: $smoky-white;
                 list-style: none;
                 display: flex;
                 flex-direction: column;
@@ -98,7 +101,7 @@ body {
     }
 
     section.restaurants {
-        background: var(--Background, #f6f6f6);
+        background: $smoky-white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -115,7 +118,7 @@ body {
                 height: 251px;
                 display: flex;
                 flex-direction: column;
-                background-color: white;
+                background-color:$white;
                 margin-bottom: 18px;
                 position: relative;
                 border-radius: 15px;
@@ -127,8 +130,8 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: var(--Green-Font, #008766);
-                    background-color: #99e2d0;
+                    color: $green-font;
+                    background-color:$green;
                     font-family: Roboto;
                     font-size: 14px;
                     font-style: normal;
@@ -153,7 +156,7 @@ body {
 
                 .card-content {
                     h3 {
-                        color: #000;
+                        color: $black-2;
                         font-family: Roboto;
                         font-size: 18px;
                         font-style: normal;
@@ -165,7 +168,7 @@ body {
                     }
 
                     p {
-                        color: #000;
+                        color:$black-2;
                         font-family: Roboto;
                         font-size: 17px;
                         font-style: normal;
@@ -177,7 +180,7 @@ body {
                     i {
                         font-size: 24px;
                         display: flex;
-                        color: #101010;
+                        color: $black;
                         position: absolute;
                         top: 35%;
                         left: 85%;
@@ -193,8 +196,7 @@ body {
                             background-clip: text;
                             -webkit-background-clip: text;
                             transition: all 0.4s ease-in-out;
-                            background-image: var(--Button-Gradient,
-                                    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+                            background-image: $button-gradient;
                         }
                     }
                 }

@@ -2,12 +2,12 @@
 @mixin number-styles {
   width: 24px;
   height: 24px;
-  background-color: #9356dc;
+  background-color:$primary;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--White, #fff);
+  color: $white;
   font-family: Roboto;
   font-size: 14.182px;
   font-style: normal;
@@ -40,7 +40,7 @@
         }
   
         section.restaurants {
-          .restaurant-card {
+         .restaurant-card {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -57,6 +57,7 @@
   
           .logo {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             position: relative;
@@ -65,16 +66,20 @@
           }
   
           .links {
+            flex-wrap: wrap;
             display: flex;
             flex-direction: row;
             justify-items: left;
             align-items: center;
             position: relative;
             top: 20%;
-            left: 30%;
+            left: 20%;
           }
+         a{
+            margin-left: 17px;
+         }
   
-          .fa-handshake-angle {
+         .fa-handshake-angle {
             display: flex;
             position: absolute;
             z-index: 1;

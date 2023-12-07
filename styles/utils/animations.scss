@@ -1,5 +1,6 @@
+
 .loader-body{
-    background-color:#ffffff;
+    background-color:$white;
     padding: 0;
     margin: 0;
     height:100vh;
@@ -66,7 +67,7 @@
   
   
   .loader>span:nth-child(even){
-    color:#9356dc;
+    color:$primary;
   
   }
   
@@ -93,3 +94,4 @@
   .loader>span:nth-child(7){
     animation-delay: 1.8s
   }
+  

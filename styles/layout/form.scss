@@ -1,17 +1,17 @@
+
 form {
            
     height: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--Grey-2, #eaeaea);
+    padding-left: 8%;
+    background: $grey-2;
 
     #location {
         width: 12px;
         height: 16px;
-        color: var(--Grey, #353535);
+        color: $grey;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -21,7 +21,7 @@ form {
     #city {
         height: 19px;
         border: none;
-        background-color: #eaeaea;
+        background-color:$grey-2;
 
         &::placeholder {
             font-family: Roboto;
@@ -29,7 +29,7 @@ form {
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            color: black;
+            color: $black-2;
         }
     }
 }
