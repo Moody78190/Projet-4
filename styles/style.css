@@ -1,6 +1,5 @@
+/* Home page media queries */
 /* Mixin pour les styles de .number*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 body main .explorer {
@@ -70,7 +69,7 @@ body .functioning .functioning-list .fa-solid {
   position: absolute;
   z-index: 1;
   left: auto;
-  padding-left: 40px;
+  padding-left: 9%;
   padding-top: 27px;
 }
 body .functioning .functioning-list .fa-store {
@@ -101,11 +100,13 @@ body .functioning .functioning-list li:hover {
   transform: scale(1.1);
 }
 body section.restaurants {
+  height: auto;
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5%;
+  padding-bottom: 66px;
 }
 body section.restaurants .restaurant-card {
   display: flex;
@@ -200,6 +201,9 @@ body section.restaurants .restaurant-card article.card .card-content .fa-solid:h
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  body .functioning .functioning-list .fa-solid {
+    padding-left: 3%;
+  }
   body .functioning .functioning-list a {
     width: 30%;
   }
@@ -211,45 +215,56 @@ body section.restaurants .restaurant-card article.card .card-content .fa-solid:h
   body section.restaurants .restaurant-card article.card {
     width: 47%;
   }
-  body nav.footer {
+  body footer {
     height: 114px;
     display: flex;
+    gap: 25px;
   }
-  body nav.footer .logo {
+  body footer h4 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    position: absolute;
     left: 85%;
-    top: 38%;
+    margin-top: 30px;
   }
-  body nav.footer .links {
+  body footer .links-1 {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-items: left;
     align-items: center;
     position: relative;
-    top: 20%;
-    left: 20%;
+    top: 25%;
+    left: 35%;
+    gap: 15px;
   }
-  body nav.footer a {
+  body footer .links-2 {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: center;
+    position: relative;
+    top: 25%;
+    left: 38%;
+    gap: 2px;
+  }
+  body footer a {
     margin-left: 17px;
   }
-  body nav.footer .fa-handshake-angle {
+  body footer .fa-handshake-angle {
     display: flex;
     position: absolute;
     z-index: 1;
-    left: 33%;
-    top: 28%;
+    left: 48.5%;
+    margin-top: -10px;
   }
-  body nav.footer .fa-utensils {
+  body footer .fa-utensils {
     display: flex;
     position: absolute;
     z-index: 1;
-    left: -0.5%;
-    top: 29%;
+    left: -8%;
+    margin-top: -14px;
   }
 }
 /* reset*/
@@ -321,7 +336,7 @@ h2 {
   position: fixed;
   z-index: 2;
   inset: 0;
-  animation: fade-out 1s 13s forwards;
+  animation: fade-out 1s 3s forwards;
   transform-origin: top;
 }
 
@@ -341,16 +356,15 @@ h2 {
 }
 
 .knife-fork {
-  font-size: 130px;
+  font-size: 30px;
   display: flex;
-  font-size: 130px;
   position: relative;
   left: -13px;
   bottom: -4px;
 }
 
 .loader > span {
-  font-size: 130px;
+  font-size: 30px;
   font-family: shrikhand;
   display: inline-block;
   animation: flip 4.6s infinite linear;
@@ -372,29 +386,37 @@ h2 {
 }
 
 .loader > span:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.1s;
 }
 
 .loader > span:nth-child(3) {
-  animation-delay: 0.6s;
+  animation-delay: 0.2s;
 }
 
 .loader > span:nth-child(4) {
-  animation-delay: 0.9s;
+  animation-delay: 0.3s;
 }
 
 .loader > span:nth-child(5) {
-  animation-delay: 1.2s;
+  animation-delay: 0.4s;
 }
 
 .loader > span:nth-child(6) {
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .loader > span:nth-child(7) {
-  animation-delay: 1.8s;
+  animation-delay: 0.6s;
 }
 
+@media screen and (min-width: 1024px) {
+  .knife-fork {
+    font-size: 130px;
+  }
+  .loader > span {
+    font-size: 130px;
+  }
+}
 header h1 {
   font-family: "shrikhand", cursive;
   text-align: center;
@@ -424,7 +446,7 @@ form #location {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 17px;
+  padding-right: 15px;
 }
 form #city {
   height: 19px;
@@ -467,14 +489,15 @@ form #city::placeholder {
   transform: scale(1.1);
 }
 
-.footer {
+footer {
   background-color: #353535;
-  height: 186px;
+  width: 100%;
+  height: auto;
   padding: 22px 25px 22px 25px;
   /*footer links*/
   /*icons footer*/
 }
-.footer h4 {
+footer h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -488,7 +511,7 @@ form #city::placeholder {
   margin-bottom: 16px;
   padding-left: 15px;
 }
-.footer a {
+footer a {
   flex-wrap: wrap;
   width: 168px;
   color: #FFFFFF;
@@ -497,139 +520,72 @@ form #city::placeholder {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-left: 60px;
+  margin-left: 15px;
 }
-.footer p {
+footer p {
   padding-bottom: 7px;
 }
-.footer .Proposer,
-.footer .Devenir {
-  padding-left: 22px;
+footer .links-1 {
+  margin-left: 25px;
 }
-.footer.Mentions,
-.footer .Contact {
-  font-weight: 400;
-}
-.footer .fa-solid {
+footer .fa-solid {
   color: #FFFFFF;
   display: flex;
   position: absolute;
   z-index: 1;
-  left: 20px;
+  left: 5px;
   padding-top: 5px;
   gap: 10px;
-  padding-left: 22px;
+  padding-left: 25px;
+}
+footer .fa-handshake-angle {
+  padding-top: 5px;
 }
 
-/* reset*/
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-  color: unset;
-  font-style: unset;
-  font-family: unset;
-  font-weight: unset;
-}
-
-/* Preferred box-sizing value */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  margin-right: 0;
-}
-
-/* Reapply the pointer cursor for anchor tags */
-a,
-button {
-  cursor: revert;
-}
-
-/* Remove list styles (bullets/numbers) */
-ol,
-ul,
-menu {
-  list-style: none;
-}
-
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
-
-/* minimum style to allow to style meter element */
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-
-h2 {
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: 48px;
-  margin-bottom: 10px;
+body .header {
   width: 100%;
 }
-
-.button-gradient {
-  width: 218px;
-  height: 50px;
-  margin-top: 40px;
-  margin-bottom: 57px;
-  color: #FFFFFF;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-radius: 25px;
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
-  transition: transform 0.3s ease-in-out;
-  /* Shadow/Button */
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-/*hover*/
-.button-gradient:hover {
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
 body .header h1 {
   margin-top: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .header #arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  position: absolute;
+  top: 3%;
+  left: 7%;
 }
 body .hero-banner img {
   width: 100%;
   height: 275px;
   object-fit: cover;
   margin-bottom: unset;
-  position: relative;
 }
 body main .menu {
+  display: flex;
+  flex-direction: column;
   background-color: #F3F3F3;
   border-radius: 20px 20px 0px 0px;
-  width: 100%;
-  position: absolute;
-  top: 42%;
 }
 body main .menu .menu-categories {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body main .menu h2 {
+body main .menu a {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+body main .menu .menu-title h2 {
   margin-top: 32px;
   margin-bottom: 40px;
-  margin-left: 12px;
   color: #101010;
   font-family: Shrikhand;
   font-size: 28px;
@@ -637,10 +593,31 @@ body main .menu h2 {
   font-weight: 400;
   line-height: normal;
   display: flex;
-  padding-left: 5px;
+  padding-left: 16px;
 }
-body main .menu h3 {
-  padding-left: 15px;
+body main .menu .menu-title i {
+  font-size: 24px;
+  color: #101010;
+  position: absolute;
+  z-index: 2;
+  top: 382px;
+  left: 313px;
+  transition: background-color 0.3s;
+}
+body main .menu .menu-title .fa-solid {
+  opacity: 0;
+}
+body main .menu .menu-title .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+}
+body main .menu .categories-title {
+  margin-right: auto;
+  margin-left: 3%;
   padding-bottom: 12px;
   color: #000;
   font-family: Roboto;
@@ -649,16 +626,49 @@ body main .menu h3 {
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
 }
 body main .menu .menu-card {
   display: flex;
   background-color: #FFFFFF;
   height: 69px;
-  width: 90%;
+  width: 95%;
   border-radius: 15.043px;
   margin-top: 12px;
   margin-bottom: 12px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  /**
+  * ----------------------------------------
+  * animation fade-in-top
+  * ----------------------------------------
+  */
+}
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 body main .menu .menu-card h4 {
   margin-left: 15px;
@@ -700,37 +710,63 @@ body main .menu .menu-card .price {
 }
 body main .menu .menu-card .container {
   display: none;
-  width: 59px;
+  width: 20%;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   justify-content: center;
   align-items: center;
-  transition: all 1s;
+  position: relative;
+  animation: scale-in-hor-right 0.6s ease-in-out both;
 }
-body main .menu .menu-card:hover {
+body main .menu .menu-card .container.container:hover {
   display: flex;
+  cursor: pointer;
 }
-body main .menu .menu-card input {
+body main .menu .menu-card .container input {
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
-body main .menu .menu-card span.checkmark {
+body main .menu .menu-card .container span.checkmark {
   color: #99E2D0;
   position: absolute;
 }
-
-a {
-  display: flex;
-  justify-content: center;
+@keyframes scale-in-hor-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
 }
 
-.footer {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  top: 236%;
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 34px;
+  }
+  .menu {
+    width: 70%;
+    margin-left: 15%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -36px;
+  }
+  .menu .menu-title i {
+    top: 10%;
+    left: 68%;
+  }
+  .menu .menu-categories {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

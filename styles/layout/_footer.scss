@@ -1,6 +1,8 @@
-.footer {
+footer {
+    
     background-color:$grey;
-    height: 186px;
+    width: 100%;
+    height:auto;
 
     padding: 22px 25px 22px 25px;
 
@@ -28,7 +30,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-left: 60px;
+        margin-left: 15px;
     }
 
    & p {
@@ -36,15 +38,9 @@
     }
     
     /*footer links*/
-   & .Proposer,
-    .Devenir {
-        padding-left: 22px;
-    }
-
-    &.Mentions,
-    .Contact {
-        font-weight: 400;
-    }
+   & .links-1{
+    margin-left: 25px;
+   }
 
     /*icons footer*/
    & .fa-solid {
@@ -52,9 +48,12 @@
         display: flex;
         position: absolute;
         z-index: 1;
-        left: 20px;
+        left: 5px;
         padding-top: 5px;
         gap: 10px;
-        padding-left: 22px;
+        padding-left: 25px;
+    }
+    & .fa-handshake-angle{
+        padding-top: 5px;
     }
 }

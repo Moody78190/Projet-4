@@ -1,8 +1,11 @@
+
+/* Home page media queries */
+
 /* Mixin pour les styles de .number*/
 @mixin number-styles {
   width: 24px;
   height: 24px;
-  background-color:$primary;
+  background-color: $primary;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -24,78 +27,95 @@
 
 // Mixin pour les media queries
 @mixin custom-media-styles {
-    @media screen and (min-width: 1024px) {
-      body {
-        .functioning {
-          .functioning-list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-  
-            a {
-              width: 30%;
-            }
-          }
-        }
-  
-        section.restaurants {
-         .restaurant-card {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-  
-            article.card {
-              width: 47%;
-            }
-          }
-        }
-  
-        nav.footer {
-          height: 114px;
+  @media screen and (min-width: 1024px) {
+    body {
+      .functioning {
+        .functioning-list {
           display: flex;
-  
-          .logo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left: 85%;
-            top: 38%;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .fa-solid {
+            padding-left: 3%;
           }
-  
-          .links {
-            flex-wrap: wrap;
-            display: flex;
-            flex-direction: row;
-            justify-items: left;
-            align-items: center;
-            position: relative;
-            top: 20%;
-            left: 20%;
+
+          a {
+            width: 30%;
           }
-         a{
-            margin-left: 17px;
-         }
-  
-         .fa-handshake-angle {
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            left: 33%;
-            top: 28%;
+        }
+      }
+
+      section.restaurants {
+        .restaurant-card {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          article.card {
+            width: 47%;
           }
-  
-          .fa-utensils {
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            left: -0.5%;
-            top: 29%;
-          }
+        }
+      }
+
+      footer {
+        height: 114px;
+        display: flex;
+        gap:25px;
+       
+        
+        
+
+       & h4 {
+          display: flex;
+          flex-wrap: wrap;
+          position: absolute;
+          left:85%;
+          margin-top: 30px;
+        }
+
+        .links-1 {
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: row;
+          justify-items: left;
+          align-items: center;
+          position: relative;
+          top: 25%;
+          left: 35%;
+          gap: 15px;
+        }
+        .links-2 {
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: row;
+          justify-items: left;
+          align-items: center;
+          position: relative;
+          top: 25%;
+          left: 38%;
+          gap: 2px;
+        }
+        a {
+          margin-left: 17px;
+        }
+
+        .fa-handshake-angle {
+          display: flex;
+          position: absolute;
+          z-index: 1;
+          left:48.5%;
+          margin-top: -10px;
+        }
+
+        .fa-utensils {
+          display: flex;
+          position: absolute;
+          z-index: 1;
+          left: -8%;
+         margin-top: -14px;
         }
       }
     }
   }
-  
+}
