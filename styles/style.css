@@ -115,7 +115,10 @@ body section.restaurants .restaurant-card {
   width: 100%;
   margin-top: 20px;
 }
-body section.restaurants .restaurant-card article.card {
+body section.restaurants .restaurant-card a {
+  width: 100%;
+}
+body section.restaurants .restaurant-card a article.card {
   height: 251px;
   display: flex;
   flex-direction: column;
@@ -123,9 +126,8 @@ body section.restaurants .restaurant-card article.card {
   margin-bottom: 18px;
   position: relative;
   border-radius: 15px;
-  width: 100%;
 }
-body section.restaurants .restaurant-card article.card .info {
+body section.restaurants .restaurant-card a article.card .info {
   width: 80px;
   height: 29px;
   display: flex;
@@ -143,16 +145,16 @@ body section.restaurants .restaurant-card article.card .info {
   right: 15px;
   border-radius: 2px;
 }
-body section.restaurants .restaurant-card article.card img {
+body section.restaurants .restaurant-card a article.card img {
   height: 67%;
   width: auto;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-body section.restaurants .restaurant-card article.card .card-content {
+body section.restaurants .restaurant-card a article.card .card-content {
   position: relative;
 }
-body section.restaurants .restaurant-card article.card .card-content h3 {
+body section.restaurants .restaurant-card a article.card .card-content h3 {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -163,7 +165,7 @@ body section.restaurants .restaurant-card article.card .card-content h3 {
   padding-left: 13px;
   padding-bottom: 5px;
 }
-body section.restaurants .restaurant-card article.card .card-content p {
+body section.restaurants .restaurant-card a article.card .card-content p {
   color: #000;
   font-family: Roboto;
   font-size: 17px;
@@ -172,7 +174,7 @@ body section.restaurants .restaurant-card article.card .card-content p {
   line-height: normal;
   padding-left: 13px;
 }
-body section.restaurants .restaurant-card article.card .card-content i {
+body section.restaurants .restaurant-card a article.card .card-content i {
   font-size: 24px;
   display: flex;
   color: #101010;
@@ -181,10 +183,10 @@ body section.restaurants .restaurant-card article.card .card-content i {
   left: 85%;
   transition: background-color 0.3s;
 }
-body section.restaurants .restaurant-card article.card .card-content .fa-solid {
+body section.restaurants .restaurant-card a article.card .card-content .fa-solid {
   opacity: 0;
 }
-body section.restaurants .restaurant-card article.card .card-content .fa-solid:hover {
+body section.restaurants .restaurant-card a article.card .card-content .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-clip: text;
@@ -212,59 +214,40 @@ body section.restaurants .restaurant-card article.card .card-content .fa-solid:h
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  body section.restaurants .restaurant-card article.card {
+  body section.restaurants .restaurant-card a {
     width: 47%;
   }
   body footer {
+    width: 100%;
     height: 114px;
-    display: flex;
-    gap: 25px;
+    padding: 30px 25px;
   }
   body footer h4 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: absolute;
-    left: 85%;
-    margin-top: 30px;
+    left: 88%;
+    margin-top: 20px;
   }
-  body footer .links-1 {
-    flex-wrap: wrap;
+  body footer .links {
+    margin-left: none;
     display: flex;
     flex-direction: row;
-    justify-items: left;
-    align-items: center;
+    align-items: flex-end;
+    padding-left: 30%;
+    padding-top: 3%;
+    gap: 30px;
+  }
+  body footer .links .links-1 {
+    display: flex;
+  }
+  body footer .links .links-2 {
+    display: flex;
+  }
+  body footer .links .fa-solid {
     position: relative;
-    top: 25%;
-    left: 35%;
-    gap: 15px;
-  }
-  body footer .links-2 {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-items: left;
-    align-items: center;
-    position: relative;
-    top: 25%;
-    left: 38%;
-    gap: 2px;
-  }
-  body footer a {
-    margin-left: 17px;
-  }
-  body footer .fa-handshake-angle {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 48.5%;
-    margin-top: -10px;
-  }
-  body footer .fa-utensils {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    left: -8%;
-    margin-top: -14px;
+    left: 6px;
+    top: -6px;
   }
 }
 /* reset*/
@@ -492,7 +475,7 @@ form #city::placeholder {
 footer {
   background-color: #353535;
   width: 100%;
-  height: auto;
+  position: relative;
   padding: 22px 25px 22px 25px;
   /*footer links*/
   /*icons footer*/
@@ -533,7 +516,7 @@ footer .fa-solid {
   display: flex;
   position: absolute;
   z-index: 1;
-  left: 5px;
+  left: 12px;
   padding-top: 5px;
   gap: 10px;
   padding-left: 25px;
@@ -557,7 +540,7 @@ body .header #arrow {
   align-items: center;
   font-size: 24px;
   position: absolute;
-  top: 3%;
+  top: 1.7%;
   left: 7%;
 }
 body .hero-banner img {
@@ -570,18 +553,14 @@ body main .menu {
   display: flex;
   flex-direction: column;
   background-color: #F3F3F3;
-  border-radius: 20px 20px 0px 0px;
-}
-body main .menu .menu-categories {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body main .menu a {
-  display: flex;
-  justify-content: center;
+  border-radius: 35px 35px 0px 0px;
+  position: relative;
+  z-index: 1;
   margin-top: -40px;
+  /*button-gradient*/
+}
+body main .menu .menu-title {
+  position: relative;
 }
 body main .menu .menu-title h2 {
   margin-top: 32px;
@@ -600,8 +579,8 @@ body main .menu .menu-title i {
   color: #101010;
   position: absolute;
   z-index: 2;
-  top: 382px;
-  left: 313px;
+  top: 36%;
+  right: 5%;
   transition: background-color 0.3s;
 }
 body main .menu .menu-title .fa-solid {
@@ -615,48 +594,17 @@ body main .menu .menu-title .fa-solid:hover {
   transition: all 0.4s ease-in-out;
   background-image: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
 }
-body main .menu .categories-title {
-  margin-right: auto;
-  margin-left: 3%;
-  padding-bottom: 12px;
-  color: #000;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-transform: uppercase;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
-}
-body main .menu .menu-card {
+body main .menu .menu-categories {
+  margin-bottom: 40px;
   display: flex;
-  background-color: #FFFFFF;
-  height: 69px;
-  width: 95%;
-  border-radius: 15.043px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
-  animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  flex-direction: column;
+  align-items: center;
+  animation: fade-in-top 1s both;
   /**
   * ----------------------------------------
   * animation fade-in-top
   * ----------------------------------------
   */
-}
-@-webkit-keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 @keyframes fade-in-top {
   0% {
@@ -670,7 +618,41 @@ body main .menu .menu-card {
     opacity: 1;
   }
 }
-body main .menu .menu-card h4 {
+body main .menu .menu-categories.cascade-delay-1 {
+  animation-delay: 500ms;
+}
+body main .menu .menu-categories.cascade-delay-2 {
+  animation-delay: 1000ms;
+}
+body main .menu .menu-categories.cascade-delay-3 {
+  animation-delay: 1500ms;
+}
+body main .menu .menu-categories .categories-title {
+  margin-right: auto;
+  margin-left: 3%;
+  padding-bottom: 12px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 40px;
+}
+body main .menu .menu-categories .menu-card {
+  display: flex;
+  background-color: #FFFFFF;
+  height: 69px;
+  width: 95%;
+  border-radius: 15.043px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+}
+body main .menu .menu-categories .menu-card h4 {
   margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -684,12 +666,12 @@ body main .menu .menu-card h4 {
   font-weight: 500;
   line-height: normal;
 }
-body main .menu .menu-card p {
+body main .menu .menu-categories .menu-card p {
   margin-left: 15px;
   margin-bottom: 5px;
-  overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
   font-family: Roboto;
   font-size: 15.043px;
@@ -697,7 +679,7 @@ body main .menu .menu-card p {
   font-weight: 300;
   line-height: normal;
 }
-body main .menu .menu-card .price {
+body main .menu .menu-categories .menu-card .price {
   color: #353535;
   font-family: Roboto;
   font-size: 15.043px;
@@ -707,8 +689,9 @@ body main .menu .menu-card .price {
   margin-top: 42px;
   margin-left: auto;
   padding-right: 15px;
+  overflow: hidden;
 }
-body main .menu .menu-card .container {
+body main .menu .menu-categories .menu-card .container {
   display: none;
   width: 20%;
   background-color: #99E2D0;
@@ -718,17 +701,13 @@ body main .menu .menu-card .container {
   position: relative;
   animation: scale-in-hor-right 0.6s ease-in-out both;
 }
-body main .menu .menu-card .container.container:hover {
-  display: flex;
-  cursor: pointer;
-}
-body main .menu .menu-card .container input {
+body main .menu .menu-categories .menu-card .container input {
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
-body main .menu .menu-card .container span.checkmark {
+body main .menu .menu-categories .menu-card .container span.checkmark {
   color: #99E2D0;
   position: absolute;
 }
@@ -744,27 +723,32 @@ body main .menu .menu-card .container span.checkmark {
     opacity: 1;
   }
 }
+body main .menu a {
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (min-width: 1024px) {
-  .header {
+  body .header {
     width: 100%;
   }
-  .header h1 {
+  body .header h1 {
     font-size: 34px;
   }
-  .menu {
-    width: 70%;
-    margin-left: 15%;
+  body section.hero div.hero-banner img {
+    height: 383px;
+  }
+  body main .menu {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    position: relative;
-    z-index: 1;
-    margin-top: -36px;
   }
-  .menu .menu-title i {
-    top: 10%;
-    left: 68%;
+  body main .menu .menu-title i {
+    top: 36%;
+    right: -20%;
   }
-  .menu .menu-categories {
+  body main .menu .menu-categories {
     width: 70%;
   }
 }

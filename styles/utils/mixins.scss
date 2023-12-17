@@ -1,4 +1,3 @@
-
 /* Home page media queries */
 
 /* Mixin pour les styles de .number*/
@@ -52,70 +51,55 @@
           flex-wrap: wrap;
           justify-content: space-between;
 
-          article.card {
+          a {
             width: 47%;
           }
+
         }
       }
-
+      
       footer {
+        width: 100%;
         height: 114px;
-        display: flex;
-        gap:25px;
+        padding: 30px 25px;
        
-        
-        
-
-       & h4 {
+       
+      h4 {
           display: flex;
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
           position: absolute;
-          left:85%;
-          margin-top: 30px;
+          left: 88%;
+          margin-top: 20px;
         }
 
-        .links-1 {
-          flex-wrap: wrap;
-          display: flex;
-          flex-direction: row;
-          justify-items: left;
-          align-items: center;
-          position: relative;
-          top: 25%;
-          left: 35%;
-          gap: 15px;
-        }
-        .links-2 {
-          flex-wrap: wrap;
-          display: flex;
-          flex-direction: row;
-          justify-items: left;
-          align-items: center;
-          position: relative;
-          top: 25%;
-          left: 38%;
-          gap: 2px;
-        }
-        a {
-          margin-left: 17px;
-        }
-
-        .fa-handshake-angle {
-          display: flex;
-          position: absolute;
-          z-index: 1;
-          left:48.5%;
-          margin-top: -10px;
-        }
-
-        .fa-utensils {
-          display: flex;
-          position: absolute;
-          z-index: 1;
-          left: -8%;
-         margin-top: -14px;
-        }
+       .links{
+        margin-left:none;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-left: 30%;
+        padding-top: 3%;
+        gap:30px;
+       
+      .links-1{
+        display: flex;
+       
+      
+       
       }
-    }
+      .links-2{
+        display: flex;
+
+      }
+       .fa-solid{
+        position: relative;
+        left: 6px;
+        top: -6px;
+       }
+      }
+
+      }
+    } 
+ 
   }
 }

@@ -2,11 +2,10 @@ footer {
     
     background-color:$grey;
     width: 100%;
-    height:auto;
-
+    position: relative;
     padding: 22px 25px 22px 25px;
 
-    & h4 {
+     h4 {
         color:$white;
         width: 139px;
         height: 27px;
@@ -21,7 +20,7 @@ footer {
         padding-left: 15px;
     }
 
-   & a {
+    a {
         flex-wrap: wrap;
         width: 168px;
         color: $white;
@@ -33,22 +32,22 @@ footer {
         margin-left: 15px;
     }
 
-   & p {
+    p {
         padding-bottom: 7px;
     }
     
     /*footer links*/
-   & .links-1{
+    .links-1{
     margin-left: 25px;
    }
 
     /*icons footer*/
-   & .fa-solid {
+    .fa-solid {
         color:$white;
         display: flex;
         position: absolute;
         z-index: 1;
-        left: 5px;
+        left: 12px;
         padding-top: 5px;
         gap: 10px;
         padding-left: 25px;

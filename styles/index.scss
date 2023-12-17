@@ -108,7 +108,7 @@ body {
         align-items: center;
         padding: 5%;
         padding-bottom: 66px;
-       
+
 
         .restaurant-card {
             display: flex;
@@ -117,89 +117,92 @@ body {
             width: 100%;
             margin-top: 20px;
 
-            article.card {
-                height: 251px;
-                display: flex;
-                flex-direction: column;
-                background-color: $white;
-                margin-bottom: 18px;
-                position: relative;
-                border-radius: 15px;
+            a {
                 width: 100%;
 
-                .info {
-                    width: 80px;
-                    height: 29px;
+                article.card {
+                    height: 251px;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: $green-font;
-                    background-color: $green;
-                    font-family: Roboto;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    position: absolute;
-                    top: 15px;
-                    right: 15px;
-                    border-radius: 2px;
-                }
-
-                img {
-                    height: 67%;
-                    width: auto;
-                    border-radius: 15px 15px 0px 0px;
-                    object-fit: cover;
-                }
-
-                .card-content {
+                    flex-direction: column;
+                    background-color: $white;
+                    margin-bottom: 18px;
                     position: relative;
-                }
+                    border-radius: 15px;
 
-                .card-content {
-                    h3 {
-                        color: $black-2;
-                        font-family: Roboto;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                        padding-top: 16px;
-                        padding-left: 13px;
-                        padding-bottom: 5px;
-                    }
-
-                    p {
-                        color: $black-2;
-                        font-family: Roboto;
-                        font-size: 17px;
-                        font-style: normal;
-                        font-weight: 300;
-                        line-height: normal;
-                        padding-left: 13px;
-                    }
-
-                    i {
-                        font-size: 24px;
+                    .info {
+                        width: 80px;
+                        height: 29px;
                         display: flex;
-                        color: $black;
+                        justify-content: center;
+                        align-items: center;
+                        color: $green-font;
+                        background-color: $green;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
                         position: absolute;
-                        top: 35%;
-                        left: 85%;
-                        transition: background-color 0.3s;
+                        top: 15px;
+                        right: 15px;
+                        border-radius: 2px;
                     }
 
-                    .fa-solid {
-                        opacity: 0;
+                    img {
+                        height: 67%;
+                        width: auto;
+                        border-radius: 15px 15px 0px 0px;
+                        object-fit: cover;
+                    }
 
-                        &:hover {
-                            opacity: 1;
-                            color: transparent;
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            transition: all 0.4s ease-in-out;
-                            background-image: $button-gradient;
+                    .card-content {
+                        position: relative;
+                    }
+
+                    .card-content {
+                        h3 {
+                            color: $black-2;
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            padding-top: 16px;
+                            padding-left: 13px;
+                            padding-bottom: 5px;
+                        }
+
+                        p {
+                            color: $black-2;
+                            font-family: Roboto;
+                            font-size: 17px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            padding-left: 13px;
+                        }
+
+                        i {
+                            font-size: 24px;
+                            display: flex;
+                            color: $black;
+                            position: absolute;
+                            top: 35%;
+                            left: 85%;
+                            transition: background-color 0.3s;
+                        }
+
+                        .fa-solid {
+                            opacity: 0;
+
+                            &:hover {
+                                opacity: 1;
+                                color: transparent;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                transition: all 0.4s ease-in-out;
+                                background-image: $button-gradient;
+                            }
                         }
                     }
                 }
