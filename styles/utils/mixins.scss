@@ -39,7 +39,7 @@
             padding-left: 3%;
           }
 
-          a {
+        a {
             width: 30%;
           }
         }
@@ -73,7 +73,6 @@
         }
 
        .links{
-        margin-left:none;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -94,7 +93,7 @@
        .fa-solid{
         position: relative;
         left: 6px;
-        top: -6px;
+        top: -3px;
        }
       }
 
