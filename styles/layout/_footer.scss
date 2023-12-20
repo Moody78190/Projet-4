@@ -5,8 +5,9 @@ footer {
     padding: 22px 25px 22px 25px;
     position: relative;
    
-    nav{
+   .footer-section{
         margin-left: -15px;
+       
    
 
      h4 {
@@ -23,7 +24,7 @@ footer {
         margin-bottom: 16px;
         padding-left: 15px;
     }
-
+    
     li {
         flex-wrap: wrap;
         width: 168px;
@@ -51,7 +52,9 @@ footer {
     font-weight: 400;
     line-height: normal;
    }
-
+   a{
+    margin-left: none;
+   }
     /*icons footer*/
     .fa-solid {
         font-size: 12px;

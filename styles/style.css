@@ -222,32 +222,35 @@ body section.restaurants .restaurant-card a article.card .card-content .fa-solid
     height: 114px;
     padding: 30px 25px;
   }
-  body footer nav ul {
+  body footer .footer-section {
     display: flex;
-    padding-left: 37%;
-    position: relative;
-    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 25px;
   }
-  body footer nav a {
-    margin-left: -40px;
-  }
-  body footer nav h4 {
+  body footer .footer-section h4 {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
     left: 88%;
     margin-top: 20px;
   }
-  body footer nav .fa-solid {
+  body footer .footer-section ul {
+    display: flex;
+    position: relative;
+  }
+  body footer .footer-section a {
+    margin-left: -40px;
+  }
+  body footer .footer-section .fa-solid {
     display: flex;
     position: absolute;
-    left: 36%;
+    left: -1.5%;
     top: 4px;
   }
-  body footer nav .fa-handshake-angle {
+  body footer .footer-section .fa-handshake-angle {
     display: flex;
     position: absolute;
-    left: 52.5%;
+    left: 24.5%;
     top: -16px;
   }
 }
@@ -479,12 +482,12 @@ footer {
   padding: 22px 25px 22px 25px;
   position: relative;
 }
-footer nav {
+footer .footer-section {
   margin-left: -15px;
   /*footer links*/
   /*icons footer*/
 }
-footer nav h4 {
+footer .footer-section h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -498,7 +501,7 @@ footer nav h4 {
   margin-bottom: 16px;
   padding-left: 15px;
 }
-footer nav li {
+footer .footer-section li {
   flex-wrap: wrap;
   width: 168px;
   color: #FFFFFF;
@@ -509,20 +512,23 @@ footer nav li {
   line-height: normal;
   margin-left: 15px;
 }
-footer nav p {
+footer .footer-section p {
   padding-bottom: 7px;
 }
-footer nav .links-1 {
+footer .footer-section .links-1 {
   margin-left: 35px;
 }
-footer nav .links-2 {
+footer .footer-section .links-2 {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-footer nav .fa-solid {
+footer .footer-section a {
+  margin-left: none;
+}
+footer .footer-section .fa-solid {
   font-size: 12px;
   color: #FFFFFF;
   display: flex;
@@ -533,7 +539,7 @@ footer nav .fa-solid {
   gap: 10px;
   padding-left: 25px;
 }
-footer nav .fa-handshake-angle {
+footer .footer-section .fa-handshake-angle {
   padding-top: 21px;
 }
 

@@ -68,20 +68,13 @@
        
         
         
-       nav{
-      
-        ul{
+        .footer-section{
           display: flex;
-          padding-left: 37%;
-          position: relative;
-          flex-wrap: nowrap;
+          justify-content: flex-end;
+          padding-right: 25px;
+        
           
-        }
-       a{
-        margin-left: -40px;
-       }
-       
-      h4 {
+        h4 {
           display: flex;
           flex-wrap: nowrap;
           position: absolute;
@@ -89,22 +82,26 @@
           margin-top: 20px;
           
         }
+        ul{
+          display: flex;
+          position: relative;
+        }
 
-       
+       a{
+        margin-left: -40px;
+       }
        .fa-solid{
         display: flex;
         position: absolute;
-        left:36%;
+        left:-1.5%;
         top: 4px;
       
-       
-       
-    }
-    .fa-handshake-angle{
-      display: flex;
-      position: absolute;
-      left:52.5%;
-      top:-16px;
+     }
+      .fa-handshake-angle{
+        display: flex;
+        position: absolute;
+        left:24.5%;
+        top:-16px;
     }
       }
     }
