@@ -159,6 +159,11 @@ body {
                     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
                     
                     
+                    .menu-description{
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
                     
                
                     h4 {
@@ -202,13 +207,12 @@ body {
                         margin-top: 42px;
                         margin-left: auto;
                         padding-right: 15px;
-                        
-                       
-    
+
+
                     }
                 }
                     .menu-item-check {
-                        display: none; /* Par défaut, l'élément est caché */
+                        display: none; 
                         width: 59px;
                         height:69px;
                         margin-right: -30%;
@@ -236,7 +240,7 @@ body {
                     
                     .menu-card:hover .menu-item-check{
                        display: flex;
-                       margin-right: 0;/* Lors du survol .item-check, apparaît */;
+                       margin-right: 0;
                        transition: margin-right 0.5s;
                 }
                 
@@ -261,7 +265,9 @@ body {
                 
             }
              
-            
+          .button-gradient{
+            align-self: center;
+          }  
         }
     }
    

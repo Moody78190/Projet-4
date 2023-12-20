@@ -17,8 +17,8 @@
   line-height: normal;
   position: relative;
   z-index: 1;
-  top: 50px;
-  right: 10px;
+  top: 35%;
+  right:50%;
 }
 
 
@@ -36,16 +36,19 @@
           flex-wrap: wrap;
 
           .fa-solid {
-            padding-left: 3%;
+            padding-right: 21%;
+            top: 0px;
           }
 
-        a {
+        li {
             width: 30%;
           }
         }
       }
 
       section.restaurants {
+        padding: 12%;
+        padding-bottom: 30px;
         .restaurant-card {
           flex-direction: row;
           flex-wrap: wrap;
@@ -63,6 +66,20 @@
         height: 114px;
         padding: 30px 25px;
        
+        
+        
+       nav{
+      
+        ul{
+          display: flex;
+          padding-left: 37%;
+          position: relative;
+          flex-wrap: nowrap;
+          
+        }
+       a{
+        margin-left: -40px;
+       }
        
       h4 {
           display: flex;
@@ -70,35 +87,28 @@
           position: absolute;
           left: 88%;
           margin-top: 20px;
+          
         }
 
-       .links{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        padding-left: 30%;
-        padding-top: 3%;
-        gap:30px;
        
-      .links-1{
+       .fa-solid{
         display: flex;
-       
+        position: absolute;
+        left:36%;
+        top: 4px;
       
        
+       
+    }
+    .fa-handshake-angle{
+      display: flex;
+      position: absolute;
+      left:52.5%;
+      top:-16px;
+    }
       }
-      .links-2{
-        display: flex;
-
-      }
-       .fa-solid{
-        position: relative;
-        left: 6px;
-        top: -3px;
-       }
-      }
-
+    }
       }
     } 
  
   }
-}

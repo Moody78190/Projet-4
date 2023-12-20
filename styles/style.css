@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Home page media queries */
 /* Mixin pour les styles de .number*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
@@ -60,8 +59,8 @@ body .functioning .functioning-list .number {
   line-height: normal;
   position: relative;
   z-index: 1;
-  top: 50px;
-  right: 10px;
+  top: 35%;
+  right: 50%;
 }
 body .functioning .functioning-list .fa-solid {
   font-size: 18px;
@@ -70,8 +69,8 @@ body .functioning .functioning-list .fa-solid {
   position: absolute;
   z-index: 1;
   left: auto;
-  padding-left: 9%;
-  padding-top: 27px;
+  padding-right: 75%;
+  padding-top: 24px;
 }
 body .functioning .functioning-list .fa-store {
   color: #9356DC;
@@ -84,21 +83,16 @@ body .functioning .functioning-list li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 30px;
   color: #000;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  position: relative;
   transition: transform 0.3s ease-in-out;
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-body .functioning .functioning-list li:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
 body section.restaurants {
   height: auto;
@@ -205,10 +199,15 @@ body section.restaurants .restaurant-card a article.card .card-content .fa-solid
     flex-wrap: wrap;
   }
   body .functioning .functioning-list .fa-solid {
-    padding-left: 3%;
+    padding-right: 21%;
+    top: 0px;
   }
-  body .functioning .functioning-list a {
+  body .functioning .functioning-list li {
     width: 30%;
+  }
+  body section.restaurants {
+    padding: 12%;
+    padding-bottom: 30px;
   }
   body section.restaurants .restaurant-card {
     flex-direction: row;
@@ -223,31 +222,33 @@ body section.restaurants .restaurant-card a article.card .card-content .fa-solid
     height: 114px;
     padding: 30px 25px;
   }
-  body footer h4 {
+  body footer nav ul {
+    display: flex;
+    padding-left: 37%;
+    position: relative;
+    flex-wrap: nowrap;
+  }
+  body footer nav a {
+    margin-left: -40px;
+  }
+  body footer nav h4 {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
     left: 88%;
     margin-top: 20px;
   }
-  body footer .links {
+  body footer nav .fa-solid {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-left: 30%;
-    padding-top: 3%;
-    gap: 30px;
+    position: absolute;
+    left: 36%;
+    top: 4px;
   }
-  body footer .links .links-1 {
+  body footer nav .fa-handshake-angle {
     display: flex;
-  }
-  body footer .links .links-2 {
-    display: flex;
-  }
-  body footer .links .fa-solid {
-    position: relative;
-    left: 6px;
-    top: -3px;
+    position: absolute;
+    left: 52.5%;
+    top: -16px;
   }
 }
 /* reset*/
@@ -475,12 +476,15 @@ form #city::placeholder {
 footer {
   background-color: #353535;
   width: 100%;
-  position: relative;
   padding: 22px 25px 22px 25px;
+  position: relative;
+}
+footer nav {
+  margin-left: -15px;
   /*footer links*/
   /*icons footer*/
 }
-footer h4 {
+footer nav h4 {
   color: #FFFFFF;
   width: 139px;
   height: 27px;
@@ -494,7 +498,7 @@ footer h4 {
   margin-bottom: 16px;
   padding-left: 15px;
 }
-footer a {
+footer nav li {
   flex-wrap: wrap;
   width: 168px;
   color: #FFFFFF;
@@ -505,24 +509,32 @@ footer a {
   line-height: normal;
   margin-left: 15px;
 }
-footer p {
+footer nav p {
   padding-bottom: 7px;
 }
-footer .links-1 {
-  margin-left: 25px;
+footer nav .links-1 {
+  margin-left: 35px;
 }
-footer .fa-solid {
+footer nav .links-2 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer nav .fa-solid {
+  font-size: 12px;
   color: #FFFFFF;
   display: flex;
   position: absolute;
   z-index: 1;
-  left: 12px;
-  padding-top: 5px;
+  left: 0px;
+  top: 42%;
   gap: 10px;
   padding-left: 25px;
 }
-footer .fa-handshake-angle {
-  padding-top: 5px;
+footer nav .fa-handshake-angle {
+  padding-top: 21px;
 }
 
 body .header {
@@ -653,6 +665,11 @@ body main .menu .menu-categories .menu-card {
   position: relative;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
+body main .menu .menu-categories .menu-card .menu-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 body main .menu .menu-categories .menu-card h4 {
   margin-left: 15px;
   margin-top: 15px;
@@ -692,7 +709,7 @@ body main .menu .menu-categories .menu-card .price {
   padding-right: 15px;
 }
 body main .menu .menu-categories .menu-item-check {
-  display: none; /* Par défaut, l'élément est caché */
+  display: none;
   width: 59px;
   height: 69px;
   margin-right: -30%;
@@ -715,7 +732,7 @@ body main .menu .menu-categories .menu-item-check span.checkmark {
 }
 body main .menu .menu-categories .menu-card:hover .menu-item-check {
   display: flex;
-  margin-right: 0; /* Lors du survol .item-check, apparaît */
+  margin-right: 0;
   transition: margin-right 0.5s;
 }
 @keyframes scale-in-hor-right {
@@ -729,6 +746,9 @@ body main .menu .menu-categories .menu-card:hover .menu-item-check {
     transform-origin: 100% 100%;
     opacity: 1;
   }
+}
+body main .button-gradient {
+  align-self: center;
 }
 
 @media screen and (min-width: 1024px) {
