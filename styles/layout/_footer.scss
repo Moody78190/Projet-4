@@ -1,75 +1,78 @@
 footer {
-    
-    background-color:$grey;
+
+    background-color: $grey;
     width: 100%;
     padding: 22px 25px 22px 25px;
     position: relative;
-   
-   .footer-section{
+
+    .footer-section {
         margin-left: -15px;
-       
-   
 
-     h4 {
-        color:$white;
-        width: 139px;
-        height: 27px;
-        padding-right: 0px;
-        color: $white;
-        font-family: Shrikhand;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 16px;
-        padding-left: 15px;
-    }
-    
-    li {
-        flex-wrap: wrap;
-        width: 168px;
-        color: $white;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-left: 15px;
-    }
 
-    p {
-        padding-bottom: 7px;
+
+        h4 {
+            color: $white;
+            width: 139px;
+            height: 27px;
+            padding-right: 0px;
+            color: $white;
+            font-family: Shrikhand;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 16px;
+            padding-left: 15px;
+        }
+
+        li {
+            flex-wrap: wrap;
+            width: 168px;
+            color: $white;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-left: 15px;
+        }
+
+        p {
+            padding-bottom: 7px;
+        }
+
+        /*footer links*/
+        .links-1 {
+            margin-left: 35px;
+        }
+
+        .links-2 {
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        a {
+            margin-left: none;
+        }
+
+        /*icons footer*/
+        .fa-solid {
+            font-size: 12px;
+            color: #FFFFFF;
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            top: 42%;
+            gap: 10px;
+            padding-left: 25px;
+        }
+
+        .fa-handshake-angle {
+            padding-top: 21px;
+        }
     }
-    
-    /*footer links*/
-    .links-1{
-    margin-left: 35px;
-   }
-   .links-2{
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-   }
-   a{
-    margin-left: none;
-   }
-    /*icons footer*/
-    .fa-solid {
-        font-size: 12px;
-        color: #FFFFFF;
-        display: flex;
-        position: absolute;
-        z-index: 1;
-        left: 0px;
-        top: 42%;
-        gap: 10px;
-        padding-left: 25px;
-    }
-    
-    .fa-handshake-angle{
-        padding-top: 21px;
-    }
-}
 }

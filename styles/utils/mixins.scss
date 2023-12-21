@@ -18,7 +18,7 @@
   position: relative;
   z-index: 1;
   top: 35%;
-  right:50%;
+  right: 50%;
 }
 
 
@@ -29,18 +29,29 @@
   @media screen and (min-width: 1024px) {
     body {
       .functioning {
+        padding: 12%;
+        margin-top: -150px;
+        margin-bottom: -130px;
+
+        h2 {
+          margin-bottom: -25px;
+        }
+
         .functioning-list {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           flex-wrap: wrap;
+          margin-top: 50px;
+          position: relative;
 
           .fa-solid {
+
             padding-right: 21%;
-            top: 0px;
+
           }
 
-        li {
+          li {
             width: 30%;
           }
         }
@@ -48,7 +59,9 @@
 
       section.restaurants {
         padding: 12%;
-        padding-bottom: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
         .restaurant-card {
           flex-direction: row;
           flex-wrap: wrap;
@@ -56,56 +69,61 @@
 
           a {
             width: 47%;
+            margin-bottom: 30px;
+
           }
 
         }
       }
-      
+
       footer {
-        width: 100%;
         height: 114px;
         padding: 30px 25px;
-       
-        
-        
-        .footer-section{
+        padding-top: 30px;
+
+
+        .footer-section {
           display: flex;
           justify-content: flex-end;
           padding-right: 25px;
-        
-          
-        h4 {
-          display: flex;
-          flex-wrap: nowrap;
-          position: absolute;
-          left: 88%;
-          margin-top: 20px;
-          
-        }
-        ul{
-          display: flex;
-          position: relative;
-        }
 
-       a{
-        margin-left: -40px;
-       }
-       .fa-solid{
-        display: flex;
-        position: absolute;
-        left:-1.5%;
-        top: 4px;
-      
-     }
-      .fa-handshake-angle{
-        display: flex;
-        position: absolute;
-        left:24.5%;
-        top:-16px;
-    }
+
+          h4 {
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            left: 88%;
+            margin-top: 20px;
+
+          }
+
+          ul {
+            display: flex;
+            position: absolute;
+            margin-top: 30px;
+          }
+
+          a {
+            margin-left: -40px;
+          }
+
+          .fa-solid {
+            display: flex;
+            position: absolute;
+            left: -1.5%;
+            top: 4px;
+
+          }
+
+          .fa-handshake-angle {
+            display: flex;
+            position: absolute;
+            left: 24.5%;
+            top: -16px;
+          }
+        }
       }
     }
-      }
-    } 
- 
   }
+
+}
