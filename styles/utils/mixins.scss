@@ -21,6 +21,11 @@
   right: 50%;
 }
 
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 // media-queries.scss
 
@@ -73,54 +78,6 @@
 
           }
 
-        }
-      }
-
-      footer {
-        height: 114px;
-        padding: 30px 25px;
-        padding-top: 30px;
-
-
-        .footer-section {
-          display: flex;
-          justify-content: flex-end;
-          padding-right: 25px;
-
-
-          h4 {
-            display: flex;
-            flex-wrap: nowrap;
-            position: absolute;
-            left: 88%;
-            margin-top: 20px;
-
-          }
-
-          ul {
-            display: flex;
-            position: absolute;
-            margin-top: 30px;
-          }
-
-          a {
-            margin-left: -40px;
-          }
-
-          .fa-solid {
-            display: flex;
-            position: absolute;
-            left: -1.5%;
-            top: 4px;
-
-          }
-
-          .fa-handshake-angle {
-            display: flex;
-            position: absolute;
-            left: 24.5%;
-            top: -16px;
-          }
         }
       }
     }

@@ -7,3 +7,24 @@
 @import'./layout/footer';
 @import'./utils/colors';
 @import'./restaurants-pages/restaurants.scss';
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color:$black;
+}

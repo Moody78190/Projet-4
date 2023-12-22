@@ -1,78 +1,65 @@
 footer {
-
     background-color: $grey;
-    width: 100%;
-    padding: 22px 25px 22px 25px;
-    position: relative;
+    color: $white;
+    display: flex;
+    flex-direction: column;
 
-    .footer-section {
-        margin-left: -15px;
+    h2 {
+        margin: 0;
+        padding-left: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-family: 'Shrikhand';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.24px;
+    }
 
+    p {
+        margin: 0;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
 
-
-        h4 {
+        a {
             color: $white;
-            width: 139px;
-            height: 27px;
-            padding-right: 0px;
-            color: $white;
-            font-family: Shrikhand;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            margin-bottom: 16px;
-            padding-left: 15px;
+
+            .fa-utensils {
+                padding-right: 10px;
+            }
+
+            .fa-handshake-angle {
+                padding-right: 5px;
+            }
         }
 
-        li {
-            flex-wrap: wrap;
-            width: 168px;
-            color: $white;
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            margin-left: 15px;
+        &.contact {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 114px;
+
+        h2 {
+            width: 20%;
+            order: 2;
+            padding-bottom: 30px;
+            padding-top: 60px;
+            text-align: center;
         }
 
         p {
-            padding-bottom: 7px;
-        }
-
-        /*footer links*/
-        .links-1 {
-            margin-left: 35px;
-        }
-
-        .links-2 {
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        a {
-            margin-left: none;
-        }
-
-        /*icons footer*/
-        .fa-solid {
-            font-size: 12px;
-            color: #FFFFFF;
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            left: 0px;
-            top: 42%;
-            gap: 10px;
-            padding-left: 25px;
-        }
-
-        .fa-handshake-angle {
-            padding-top: 21px;
+            order: 1;
+            padding-top: 25px;
+            padding-bottom: 30px;
+            padding-top: 62px;
         }
     }
 }
