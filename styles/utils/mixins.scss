@@ -33,7 +33,7 @@
 @mixin custom-media-styles {
   @media screen and (min-width: 1024px) {
     body {
-      .functioning {
+        .functioning {
         padding: 12%;
         margin-top: -150px;
         margin-bottom: -130px;

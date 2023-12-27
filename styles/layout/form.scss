@@ -1,11 +1,13 @@
 
+
+
 form {
            
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 8%;
+    padding-left:25%;
     background: $grey-2;
 
     #location {
@@ -15,7 +17,7 @@ form {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 15px;
+        padding-right: 20px;
     }
 
     #city {
@@ -32,4 +34,13 @@ form {
             color: $black-2;
         }
     }
+}
+
+
+@media screen and (min-width: 1024px) {
+    form {
+        
+        padding-left: 85px;
+    }
+    
 }

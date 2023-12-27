@@ -398,7 +398,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 8%;
+  padding-left: 25%;
   background: #eaeaea;
 }
 form #location {
@@ -408,7 +408,7 @@ form #location {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 form #city {
   height: 19px;
@@ -424,6 +424,11 @@ form #city::placeholder {
   color: #000;
 }
 
+@media screen and (min-width: 1024px) {
+  form {
+    padding-left: 85px;
+  }
+}
 .button-gradient {
   width: 218px;
   height: 50px;
@@ -737,8 +742,8 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 a {
